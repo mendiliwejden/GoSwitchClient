@@ -2509,10 +2509,3 @@
     font-size: 41px;
     color: rgba(239,101,138,1);
 }
-a {
-    outline: none;
-    text-decoration: none;
-    display: inline-block;   
-    text-align: center;
-    color: rgba(255,255,255,1);
-  }
