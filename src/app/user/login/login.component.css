@@ -1808,12 +1808,13 @@ header nav {
       position: absolute;
       width: 464px;
       height: 87px;
-      left: 22px;
+      left: 126px;
       top: 511px;
       overflow: visible;
   }
   #Rectangle_60 {
       fill: rgba(105,160,200,1);
+      left: 126px;
   }
   .Rectangle_60 {
       filter: drop-shadow(-10px -10px 15px rgba(0, 0, 0, 0.161));
@@ -1886,6 +1887,20 @@ header nav {
       font-size: 26px;
       color: rgba(170,170,170,1);
   }
+
+  #Rectangle_60 {
+    background-color: rgba(105,160,200,1);
+    font-size: 28px;
+    color:white;
+    filter: drop-shadow(-10px -10px 15px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width :270px;
+    height:87px;
+    left: 0px;
+    top: 0px;
+    border-radius: 50px;
+}
   #Groupe_222 {
       position: absolute;
       width: 523px;
@@ -1921,24 +1936,35 @@ header nav {
       overflow: visible;
       width: 523px;
       height: 78px;
-      left: 0px;
+      left: -420px;
       top: 0px;
   }
   #E-mail {
-      opacity: 0.56;
-      left: 35px;
-      top: 24px;
-      position: absolute;
-      overflow: visible;
-      width: 80px;
-      white-space: nowrap;
-      text-align: left;
-      font-family: Helvetica Neue LT Std;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 26px;
-      color: rgba(170,170,170,1);
-  }
+   
+        fill: rgba(255,255,255,1);
+        stroke: rgba(112,112,112,1);
+        stroke-width: 1px;
+        stroke-linejoin: miter;
+        stroke-linecap: butt;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+        
+    }
+ .E-mail {
+    position: absolute;
+    overflow: visible;
+    width: 523px;
+    height: 78px;
+    left: 421px;
+    top: 0px;
+    border:1px solid rgba(105,160,200,1);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+      
+}
+    
+  
   #Groupe_188 {
       position: absolute;
       width: 350px;
