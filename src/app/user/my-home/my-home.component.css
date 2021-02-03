@@ -321,6 +321,10 @@
     height: 52px;
     left: 0px;
     top: 0px;
+    border:1px solid rgba(105,160,200,1);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 21px;
 }
 #Polygone_1_c {
     fill: rgba(105,160,200,1);
@@ -754,6 +758,7 @@
     transform-origin: center;
     left: 0px;
     top: 0px;
+    margin-left: 30px;
 }
 #Groupe_340 {
     position: absolute;
@@ -776,15 +781,7 @@
     --web-action-target: titre.html;
     cursor: pointer;
 }
-#Rectangle_57_ea {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(105,160,200,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
+
 .Rectangle_57_ea {
     position: absolute;
     overflow: visible;
@@ -792,6 +789,12 @@
     height: 52px;
     left: 0px;
     top: 0px;
+    fill: rgba(255,255,255,1);
+    border:1px solid rgba(105,160,200,1);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    shape-rendering: auto;
 }
 #Groupe_170 {
     position: absolute;
@@ -1011,6 +1014,12 @@
     left: 0px;
     top: 0px;
 }
+.flexDate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
 #Polygone_1_eu {
     fill: rgba(105,160,200,1);
 }
@@ -1112,15 +1121,18 @@
 }
 #Trac_39 {
     fill: rgba(148,182,206,1);
+    opacity:0;
+    width: 180px;
+    height: 180px;
 }
 .Trac_39 {
-    overflow: visible;
+    
     position: absolute;
-    width: 145.703px;
-    height: 145.703px;
-    left: 23.006px;
-    top: 15.338px;
-    transform: matrix(1,0,0,1,0,0);
+    width: 180px;
+    height: 180px;
+    
+    background-image: url("../../../assets/img/maMaison/imageImport.png");
+    
 }
 #add_photo_alternate-24px_e {
     position: absolute;
@@ -1132,14 +1144,19 @@
 }
 #Trac_38_e {
     fill: transparent;
+    opacity:0;
+    width: 703px;
+    height: 703px;
 }
 .Trac_38_e {
     overflow: visible;
     position: absolute;
-    width: 184.045px;
-    height: 184.045px;
+    width: 703px;
+    height: 703px;
     left: 0px;
     top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+    background-image: url("../../../assets/img/maMaison/imageImport.png");
     transform: matrix(1,0,0,1,0,0);
 }
 #Trac_39_e {
@@ -1163,29 +1180,14 @@
     overflow: visible;
 }
 #Trac_38_fa {
-    fill: transparent;
+    
+    opacity:0;
+    width: 180px;
+    height: 180px;
 }
-.Trac_38_fa {
-    overflow: visible;
-    position: absolute;
-    width: 184.045px;
-    height: 184.045px;
-    left: 0px;
-    top: 0px;
-    transform: matrix(1,0,0,1,0,0);
-}
-#Trac_39_fa {
-    fill: rgba(148,182,206,1);
-}
-.Trac_39_fa {
-    overflow: visible;
-    position: absolute;
-    width: 145.703px;
-    height: 145.703px;
-    left: 23.006px;
-    top: 15.338px;
-    transform: matrix(1,0,0,1,0,0);
-}
+
+
+
 #add_photo_alternate-24px_fb {
     position: absolute;
     width: 184.045px;
@@ -1195,7 +1197,9 @@
     overflow: visible;
 }
 #Trac_38_fc {
-    fill: transparent;
+    opacity:0;
+    width: 180px;
+    height: 180px;
 }
 .Trac_38_fc {
     overflow: visible;
@@ -1227,7 +1231,9 @@
     overflow: visible;
 }
 #Trac_38_ff {
-    fill: transparent;
+    opacity:0;
+    width: 180px;
+    height: 180px;
 }
 .Trac_38_ff {
     overflow: visible;
@@ -2509,3 +2515,50 @@
     font-size: 41px;
     color: rgba(239,101,138,1);
 }
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"], focus {
+    color: rgb(7, 88, 146);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+.de{
+    margin-top:4px;
+}
+.a{
+    margin-top:4px;
+}
+  
+h3{
+    color: rgb(7, 88, 146);
+}
+ #dateStyle{
+     margin-left: 80px;
+ } 
