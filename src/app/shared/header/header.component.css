@@ -2466,6 +2466,8 @@
     font-weight: bold;
     font-size: 30px;
     color: rgba(255,255,255,1);
+    filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.529));
+
 }
 #Toutes_les_annonces {
     left: 1086px;
@@ -2480,6 +2482,7 @@
     font-weight: bold;
     font-size: 30px;
     color: rgba(255,255,255,1);
+    filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.529));
 }
 #Ma_destination {
     left: 748px;
@@ -2494,6 +2497,7 @@
     font-weight: bold;
     font-size: 30px;
     color: rgba(255,255,255,1);
+    filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.529));
 }
 #GO_SWITCH {
     left: 31px;

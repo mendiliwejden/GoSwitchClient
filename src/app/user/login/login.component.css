@@ -30,7 +30,7 @@ header nav {
       position: absolute;
       width: 1920px;
       height: 1080px;
-      background-color: rgba(236,203,255,1);
+      /* background-color: rgba(236,203,255,1); */
       overflow: hidden;
       --web-view-name: connexion;
       --web-view-id: connexion;
@@ -2260,7 +2260,7 @@ header nav {
   #GO_SWITCH {
       opacity: 0.56;
       left: 31px;
-      top: 0px;
+      top: 20px;
       position: absolute;
       overflow: visible;
       width: 150px;
@@ -2273,7 +2273,10 @@ header nav {
       color: rgba(239,101,138,1);
   }
   a {
+    font-family: Monotype Corsiva;
+    font-style: normal;
     outline: none;
+    white-space: nowrap;
     text-decoration: none;
     display: inline-block;   
     text-align: center;
