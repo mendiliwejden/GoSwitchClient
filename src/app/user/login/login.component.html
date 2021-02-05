@@ -1,41 +1,60 @@
-<body>
+
 	<div id="connexion">
+
 		<img id="ID683501db752baa384a455ffff613" src="assets/img/home/ID683501db752baa384a455ffff613.png" srcset="assets/img/home/ID683501db752baa384a455ffff613.png 1x">
 			
+
 			<div id="Groupe_236">
 			<svg class="Rectangle_66">
 				<rect id="Rectangle_66" rx="76" ry="76" x="0" y="0" width="645" height="873">
 				</rect>
 			</svg>
 			<div id="Groupe_235">
-				<div id="Connexion_gz">
-					<span>Connexion</span>
-				</div>
-				<div id="Groupe_234">
-					<div >
-						<button id="Rectangle_60">
-						Connexion</button>
+				<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+					<div id="Connexion_gz">
+						<span>Connexion</span>
 					</div>
-				</div>
-				<div id="Groupe_221">
-					<div class="Rectangle_24_g">
-						<div id="Rectangle_24_g">
-							<div >
-								<input id="E-mail" type="password" class="E-mail" placeholder="Mot de passe" required>
-							</div>
+					<div id="Groupe_234">
+						<div >
+							<button id="Rectangle_60">
+							Connexion</button>
 						</div>
-				</div>
-				</div>
-
-				<div id="Groupe_222">									
+					</div>
+					<div id="Groupe_221">
 						<div class="Rectangle_24_g">
-								<div id="Rectangle_24_g">
-									<div >
-										<input id="E-mail" type="text" class="E-mail" placeholder="e-mail"required>
+							<div id="Rectangle_24_g">
+								<div >
+									<input id="E-mail" type="password" class="E-mail" placeholder="Mot de passe" name="password" [(ngModel)]="model.password" 
+									#password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6">
+
+									<div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+										<div *ngIf="password.errors.required">Password is required</div>
+										<div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+										
 									</div>
 								</div>
+							</div>
 						</div>
-				</div>
+					</div>
+
+					<div id="Groupe_222">									
+							<div class="Rectangle_24_g">
+									<div id="Rectangle_24_g">
+										<div >
+											<input id="E-mail" type="email" class="E-mail" placeholder="e-mail" name="email" [(ngModel)]="model.email"
+											 #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+											 <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+
+												<div *ngIf="email.errors.required">Email is required</div>
+												<div *ngIf="email.errors.email">Email must be a valid email address</div>
+
+											</div>
+										</div>
+									</div>
+							</div>
+					</div>
+				</form>
+
 
 				<div id="Groupe_188">
 					<a routerLink="/register">
@@ -131,5 +150,5 @@
 		</div>
 		
 	</div>
-	</body>
+	
 	
