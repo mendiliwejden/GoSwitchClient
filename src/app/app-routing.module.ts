@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {HomeComponent} from './user/home/home.component'
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {HomeComponent} from './user/home/home.component';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './user/contact/contact.component';
 import { ErrorComponent } from './user/error/error.component';
@@ -13,7 +13,7 @@ import { DestinationComponent } from './user/destination/destination.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: "login",
