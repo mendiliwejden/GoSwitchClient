@@ -12,6 +12,7 @@ import { ContactComponent } from './user/contact/contact.component';
 import { ErrorComponent } from './user/error/error.component';
 import { MyHomeComponent } from './user/my-home/my-home.component';
 import { DestinationComponent } from './user/destination/destination.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DestinationComponent } from './user/destination/destination.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

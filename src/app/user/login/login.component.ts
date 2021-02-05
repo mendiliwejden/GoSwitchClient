@@ -6,11 +6,12 @@
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
+  model: any = {};
 
-  constructor() { }
-
-  ngOnInit() {
+  onSubmit() {
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.model, null, 4));
   }
 
+  
 }
