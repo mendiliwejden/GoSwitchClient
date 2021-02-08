@@ -890,3 +890,54 @@
 		top: 2095px;
 		overflow: visible;
 	}
+	.invalid-feedback{
+		color:red;
+		position: absolute;
+		overflow: visible;
+		left: 105px;
+		top: 60px;
+		text-align: center;
+		font-size: 20px;
+		width: -webkit-fill-available ;
+	  }
+	  
+  .invalid-feedback_Num_tel{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: 117px;
+    top: 60px;
+    text-align: center;
+    font-size: 20px;
+    width: -webkit-fill-available ;
+  }
+  .invalid{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: 190px;
+    top: 60px;
+    text-align: center;
+    font-size: 20px;
+    width: -webkit-fill-available ;
+  }
+  .invalid-type{
+	color:red;
+	position: absolute;
+	overflow: visible;
+	left: 180px;
+	top: 60px;
+	text-align: center;
+	font-size: 20px;
+	width: -webkit-fill-available ;
+  }
+  .invalid-textarea{
+	color:red;
+	position: absolute;
+	overflow: visible;
+	left: 121px;
+	top: 187px;
+	text-align: center;
+	font-size: 20px;
+	width: -webkit-fill-available ;
+  }

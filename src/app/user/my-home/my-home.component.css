@@ -2280,7 +2280,7 @@ input[type='checkbox']{
     position: absolute;
     overflow: visible;
     width: 400px;
-    height: 132px;
+    height: 100px;
     left: 0px;
     top: 0px;
     border-radius: 50px;
@@ -2572,4 +2572,78 @@ h3{
  #dateStyle{
      margin-left: 80px;
  } 
- 
+ .invalid-feedback{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: -125px;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    width: -webkit-fill-available ;
+  }
+  .invalid-feedback-lits{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: -125px;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    width: auto ;
+    
+  }
+
+  .invalid-feedback-etags{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: -90px;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    width: -webkit-fill-available ;
+  }
+
+  .invalid-feedback-Balcons{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: -65px;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    width: max-content;
+  }
+
+  .invalid-feedback-terrase{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: -65px;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    width: max-content;
+  }
+  .invalid-feedback-logement{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: 25px;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    width: max-content;
+  }
+  .invalid-feedback-photo{
+    color:red;
+    position: absolute;
+    overflow: visible;
+    left: 15px;
+    top: 165px;
+    text-align: center;
+    font-size: 20px;
+    width: max-content;
+  }
+
