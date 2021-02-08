@@ -13,6 +13,8 @@ import { ErrorComponent } from './user/error/error.component';
 import { MyHomeComponent } from './user/my-home/my-home.component';
 import { DestinationComponent } from './user/destination/destination.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
