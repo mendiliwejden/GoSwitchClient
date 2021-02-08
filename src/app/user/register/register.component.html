@@ -11,11 +11,13 @@
 			</div>
 		</div>
 		<div id="Groupe_212">
+		<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
 			<div id="Groupe_206">
 				<svg class="Rectangle_66">
 					<rect id="Rectangle_66" rx="76" ry="76" x="0" y="0" width="1061" height="1882">
 					</rect>
 				</svg>
+				<!-- Prenom -->
 				<div id="Groupe_67">
 					<div id="Groupe_66">
 						
@@ -24,11 +26,16 @@
 								<label for="prenom" class="label">Prenom</label><span style="color:rgba(114,114,114,1);">*</span>
 							</div>
 							<div >
-								<input id="prenom" type="text" class="Rectangle_26" required>
+								<input formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }"
+								 id="prenom" type="text" class="Rectangle_26" required>
+								 <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback-Prenom">
+									<div *ngIf="f.lastName.errors.required">Prenom is required</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- Num tel -->
 				<div id="Groupe_207">
 					<div id="Groupe_57">
 						<div id="Numro_de_tlphone_1">
@@ -36,10 +43,16 @@
             				
 						</div>
 						<div >
-							<input id="numeroDeTelephone" type="text" class="Rectangle_26">
+							<input  formControlName="NumTel" [ngClass]="{ 'is-invalid': submitted && f.NumTel.errors }"
+							  id="numeroDeTelephone" type="text" class="Rectangle_26">
+							  <div *ngIf="submitted && f.NumTel.errors" >
+								<div class="invalid-feedback_Num_tel" *ngIf="f.NumTel.errors.required">Numero is required</div>
+								<div class="invalid" *ngIf="f.NumTel.errors.minlength">Numero must be at least 8 characters</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				<!-- Nom -->
 				<div id="Groupe_117">
 					<div id="Groupe_68">
 						<div id="Groupe_54">
@@ -47,11 +60,16 @@
 							    <label for="nom" class="label">Nom</label><span style="color:rgba(114,114,114,1);">*</span>
 							</div>
 							<div >
-								<input id="nom" type="text" class="Rectangle_26" required>
+								<input formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
+								 id="nom" type="text" class="Rectangle_26" required>
+								<div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+									<div *ngIf="f.firstName.errors.required"> Nom is required</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- Button inscription -->
 				<div id="Groupe_112">
 					<div >
 						<button id="Rectangle_60">
@@ -60,6 +78,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Tel 2 -->
 			<div id="Groupe_64">
 				<div id="Groupe_57_c">
 					<div id="Numro_de_tlphone_2">
@@ -71,6 +90,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Disponibilité -->
 			<div id="Groupe_63">
 				<div id="Groupe_58">
 					<div id="Numro_de_tlphone_2">
@@ -78,6 +98,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Facebook -->
 			<div id="Groupe_61">
 				<div id="Groupe_60">
 					<div id="Facebook">
@@ -89,6 +110,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Région -->
 			<div id="Groupe_213">
 				<div id="Groupe_62">
 					<div id="Groupe_59">
@@ -97,7 +119,8 @@
 						
 					</div>
 					<div >
-						<select id="région" type="text" class="Rectangle_26">
+						<select formControlName="region" [ngClass]="{ 'is-invalid': submitted && f.region.errors }"
+						 id="région" type="text" class="Rectangle_26">
 							<option>Sélectionner votre région</option>
 							<option>Tunis</option>
 							<option>Bizerte</option>
@@ -124,6 +147,9 @@
 							<option>Sousse</option>
 							<option>Mahdia</option>
 						</select>
+						<div *ngIf="submitted && f.region.errors" >
+							<div class="invalid-region" *ngIf="f.region.errors.required">Region is required</div>
+						</div>
 					</div>
 					</div>
 				</div>
@@ -132,7 +158,8 @@
 					</path>
 				</svg>
 			</div>
-			
+
+			<!-- Start Clock design -->
 			<div id="Groupe_218">
 				<div id="Groupe_216">
 					
@@ -154,6 +181,9 @@
 					<input id="Rectangle_22_dx" type ="time"rx="28.5" ry="28.5" x="0" y="0" width="86" height="57">
 				</div>
 			</div>
+			<!-- End Clock design -->
+
+			<!-- Mot de passe -->
 			<div id="Groupe_221">
 				<div id="Groupe_60_d">
 					<div id="Mot_de_passe">
@@ -161,10 +191,16 @@
 						
 					</div>
 					<div >
-						<input id="motDePasse" type="text" class="Rectangle_26" required>
+						<input formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+						 id="motDePasse" type="text" class="Rectangle_26" required>
+						 <div *ngIf="submitted && f.password.errors" >
+							<div class="invalid-pass" *ngIf="f.password.errors.required">Password is required</div>
+							<div class="invalid-pass" *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Email -->
 			<div id="Groupe_222">
 				<div id="Groupe_60_ea">
 					<div id="E-mail">
@@ -172,10 +208,16 @@
 						
 					</div>
 					<div >
-						<input id="Email" type="text" class="Rectangle_26" required>
+						<input formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+						 id="Email" type="text" class="Rectangle_26" required>
+						 <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+							<div *ngIf="f.email.errors.required">Email is required</div>
+							<div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Confirm Mot de passe -->
 			<div id="Groupe_223">
 				<div id="Groupe_60_eb">
 					<div id="Confirmer_mot_de_passe">
@@ -183,10 +225,16 @@
 						
 					</div>
 					<div >
-						<input id="confirmerMotDePasse" type="text" class="Rectangle_26" required>
+						<input  formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
+						 id="confirmerMotDePasse" type="text" class="Rectangle_26" required>
+						 <div *ngIf="submitted && f.confirmPassword.errors" >
+							<div class="invalid-confirm" *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+							<div class="must-match" *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Destination -->
 			<div id="Groupe_224">
 				<div id="Groupe_60_ef">
 					<div id="Destination_prfre">
@@ -194,7 +242,8 @@
 						
 					</div>
 					<div >
-						<select id="destination" type="text" class="Rectangle_26" required>
+						<select formControlName="destination" [ngClass]="{ 'is-invalid': submitted && f.destination.errors }"
+						 id="destination" type="text" class="Rectangle_26" required>
 							<option>Choisir Destination</option>
 							<option>Tunis</option>
 							<option>Bizerte</option>
@@ -221,6 +270,9 @@
 							<option>Sousse</option>
 							<option>Mahdia</option>
 						</select>
+						<div *ngIf="submitted && f.destination.errors" >
+							<div class="invalid-Destination" *ngIf="f.destination.errors.required">Destination is required</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -228,6 +280,7 @@
 				<path id="Polygone_3" d="M 13.99999904632568 0 L 28 25 L 0 25 Z">
 				</path>
 			</svg>
+			<!-- Cin -->
 			<div id="Groupe_232">
 				<div id="Groupe_231">
 					<div id="Groupe_225">
@@ -240,14 +293,21 @@
 				</div>
 				<div class="Rectangle_24_eo">
 					<div id="Importer">
-						<input type = "file" required>
+						<input formControlName="cin" [ngClass]="{ 'is-invalid': submitted && f.cin.errors }"
+						 type = "file" required>
+						 <div *ngIf="submitted && f.cin.errors" class="invalid_file">
+							<div *ngIf="f.cin.errors.required">Cin is required</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			
+			<!-- Definition des champs obligatoire -->
 			<div id="_champ_obligatoire__pour_appel">
 				<span>* champ obligatoire<br/>** pour appel téléphonique<br/>*** pour vérifier la propriété du logement</span>
 			</div>
+
+			<!-- Facture -->
 			<div id="Groupe_233">
 				<div id="Facture_STEG_ou__SONEDE_scanne">
 					<span>Facture STEG ou <br/>SONEDE scannée</span><span style="color:rgba(114,114,114,1);">***</span>
@@ -255,15 +315,16 @@
 				<div id="Groupe_229">
 					<div class="Rectangle_24_ew">
 						<div id="Importer">
-							<input type = "file" required>
+							<input formControlName="steg" [ngClass]="{ 'is-invalid': submitted && f.steg.errors }"
+							 type = "file" required>
+							 <div *ngIf="submitted && f.steg.errors" class="invalid_file">
+								<div *ngIf="f.steg.errors.required">Steg is required</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="Groupe_230">
-			
-				<input id="skan" type="file" class="Rectangle_26">
-			</div>
+		</form>
 		</div>
 	</div>
 <app-header></app-header>
