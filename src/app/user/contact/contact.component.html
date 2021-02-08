@@ -103,65 +103,103 @@
 		</div>
     </div>
      <!-- End footer -->
-	<div id="Groupe_613">
-		<div id="Groupe_206">
-			<svg class="Rectangle_66">
-				<rect id="Rectangle_66" rx="76" ry="76" x="0" y="0" width="942" height="687">
-				</rect>
-			</svg>
-		</div>
-		<div id="Groupe_612">
-			<div id="Groupe_608">
-				<div id="Numro_de_tlphone">
-					<span>Numéro de téléphone</span><span style="color:rgba(114,114,114,1);"> *</span>
-				</div>
-				<div >
-                    <input id="numeroDeTelephone" type="text" class="Rectangle_26" required>
-                </div>
+
+	 <!-- start forms -->
+		<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+		
+		<div id="Groupe_613">
+			<div id="Groupe_206">
+				<svg class="Rectangle_66">
+					<rect id="Rectangle_66" rx="76" ry="76" x="0" y="0" width="942" height="687">
+					</rect>
+				</svg>
 			</div>
-			<div id="Groupe_607">
-				<div id="Nom">
-					<span>Nom</span><span style="color:rgba(114,114,114,1);">*</span>
-				</div>
-				<div >
-                    <input id="nom" type="text" class="Rectangle_26" required>
-                </div>
-			</div>
-			<div id="Groupe_609">
-				<div id="E-mail">
-					<span>E-mail</span><span style="color:rgba(114,114,114,1);">*</span>
-				</div>
-                <div >
-                    <input id="Email" type="text" class="Rectangle_26" required>
-                </div>
-			</div>
-			<div id="Groupe_610">
-				<div id="Sujet">
-					<span>Sujet</span><span style="color:rgba(114,114,114,1);">*</span>
-				</div>
 			
-                <div >
-                    <input id="Rectangle_24_dr" type="text" class="Rectangle_26" required>
-                </div>
-			</div>
-			<div id="Groupe_611">
-				<div id="Message">
-					<span>Message</span><span style="color:rgba(114,114,114,1);">*</span>
+			<div id="Groupe_612">
+				<!-- Num Tel -->
+				<div id="Groupe_608">
+					<div id="Numro_de_tlphone">
+						<span>Numéro de téléphone</span><span style="color:rgba(114,114,114,1);"> *</span>
+					</div>
+					<div >
+						<input formControlName="NumTel" [ngClass]="{ 'is-invalid': submitted && f.NumTel.errors }"
+						 id="numeroDeTelephone" type="text" class="Rectangle_26" required>
+						 <div *ngIf="submitted && f.NumTel.errors" >
+							<div class="invalid-feedback_Num_tel" *ngIf="f.NumTel.errors.required">Numero is required</div>
+							<div class="invalid" *ngIf="f.NumTel.errors.minlength">Numero must be at least 8 characters</div>
+						</div>
+					</div>
 				</div>
-			                
-                <div >
-                    <textarea id="Rectangle_24_du"  
-                     class="Rectangle_24_du" required></textarea>
-                </div>
+				<!-- Nom -->
+				<div id="Groupe_607">
+					<div id="Nom">
+						<span>Nom</span><span style="color:rgba(114,114,114,1);">*</span>
+					</div>
+					<div >
+						<input formControlName="nom" [ngClass]="{ 'is-invalid': submitted && f.nom.errors }"
+						 id="nom" type="text" class="Rectangle_26" required>
+						 <div *ngIf="submitted && f.nom.errors" class="invalid-feedback">
+							<div *ngIf="f.nom.errors.required"> Nom is required</div>
+						</div>
+					</div>
+				</div>
+				<!-- Email -->
+				<div id="Groupe_609">
+					<div id="E-mail">
+						<span>E-mail</span><span style="color:rgba(114,114,114,1);">*</span>
+					</div>
+					<div >
+						<input formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+						 id="Email" type="text" class="Rectangle_26" required>
+						 <div *ngIf="submitted && f.email.errors" >
+							<div class="invalid-feedback" *ngIf="f.email.errors.required">Email is required</div>
+							<div class="invalid-type" *ngIf="f.email.errors.email">Email must be a valid email address</div>
+						</div>
+					</div>
+				</div>
+				<!-- sujet -->
+				<div id="Groupe_610">
+					<div id="Sujet">
+						<span>Sujet</span><span style="color:rgba(114,114,114,1);">*</span>
+					</div>
+				
+					<div >
+						<input formControlName="sujet" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.sujet.errors }"
+						 id="Rectangle_24_dr" type="text" class="Rectangle_26" required>
+						 <div *ngIf="submitted && f.sujet.errors" class="invalid-feedback">
+							<div *ngIf="f.sujet.errors.required"> Sujet is required</div>
+						</div>
+					</div>
+				</div>
+				<!-- message -->
+				<div id="Groupe_611">
+					<div id="Message">
+						<span>Message</span><span style="color:rgba(114,114,114,1);">*</span>
+					</div>
+								
+					<div >
+						<textarea formControlName="message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" id="Rectangle_24_du"  
+						class="Rectangle_24_du" required>
+						
+					</textarea>
+					<div *ngIf="submitted && f.message.errors" class="invalid-textarea">
+						<div *ngIf="f.message.errors.required"> Message is required</div>
+					</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div id="Groupe_166">
-		<div >
-			<button id="Env">Envoyer</button>
-        </div>
-       
-	</div>
+		
+		<!-- button -->
+		<div id="Groupe_166">
+			<div >
+				<button id="Env">Envoyer</button>
+			</div>
+		
+		</div>
+		</form>
+		<!-- end forms -->
+	 <!-- Champ obligatoire -->
 	<div id="_champ_obligatoire">
 		<span>* champ obligatoire</span>
 	</div>
