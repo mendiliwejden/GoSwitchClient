@@ -8,6 +8,8 @@ import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 import { MyHomeComponent } from './user/my-home/my-home.component';
 import { DestinationComponent } from './user/destination/destination.component';
+import { EditPasswordComponent } from './shared/profile/edit-password/edit-password.component';
+import { EditProfileComponent } from './shared/profile/edit-profile/edit-profile.component';
 
 
 const routes: Routes = [
@@ -30,6 +32,14 @@ const routes: Routes = [
   {
     path: "destination",
     component: DestinationComponent,
+  },
+  {
+    path: "editPassword",
+    component: EditPasswordComponent,
+  },
+  {
+    path: "editProfile",
+    component: EditProfileComponent,
   },
   {
     path: "contact",

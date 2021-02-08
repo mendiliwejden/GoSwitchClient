@@ -13,6 +13,8 @@ import { MyHomeComponent } from './user/my-home/my-home.component';
 import { DestinationComponent } from './user/destination/destination.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditProfileComponent } from './shared/profile/edit-profile/edit-profile.component';
+import { EditPasswordComponent } from './shared/profile/edit-password/edit-password.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     ErrorComponent,
     MyHomeComponent,
-    DestinationComponent
+    DestinationComponent,
+    EditProfileComponent,
+    EditPasswordComponent
   ],
   imports: [
     BrowserModule,
