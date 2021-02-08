@@ -43,7 +43,7 @@
             				
 						</div>
 						<div >
-							<input  formControlName="NumTel" [ngClass]="{ 'is-invalid': submitted && f.NumTel.errors }"
+							<input formControlName="NumTel" [ngClass]="{ 'is-invalid': submitted && f.NumTel.errors }"
 							  id="numeroDeTelephone" type="text" class="Rectangle_26">
 							  <div *ngIf="submitted && f.NumTel.errors" >
 								<div class="invalid-feedback_Num_tel" *ngIf="f.NumTel.errors.required">Numero is required</div>
