@@ -23,11 +23,11 @@
 						</div>
 						<div class="Rectangle_21">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="num-tel" name="numTel" [(ngModel)]="model.email"
-								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
-									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
-										<div *ngIf="email.errors.required">Num Tel is required</div>
-										<div *ngIf="email.errors.email">Num Tel must be valid</div>
+								<input type="text" class ="nom-css" placeholder="num-tel" name="numTel" [(ngModel)]="model.numTel"
+								#numTel="ngModel" [ngClass]="{ 'is-invalid': f.submitted && numTel.invalid }" required numTel>
+									<div *ngIf="f.submitted && numTel.invalid" class="invalid-feedback">
+										<div *ngIf="numTel.errors.required">Num Tel is required</div>
+										<div *ngIf="numTel.errors.numTel">Num Tel must be valid</div>
 									</div>
 							</div>
 						</div>
@@ -39,11 +39,11 @@
 						</div>
 						<div class="Rectangle_26">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="nom" name="numTel" [(ngModel)]="model.email"
-								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
-									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
-										<div *ngIf="email.errors.required">Nom Tel is required</div>
-										<div *ngIf="email.errors.email">Nom Tel must be valid</div>
+								<input  type="text" class ="nom-css" placeholder="nom" name="nom" [(ngModel)]="model.nom"
+								#nom="ngModel" [ngClass]="{ 'is-invalid': f.submitted && nom.invalid }" required nom>
+									<div *ngIf="f.submitted && nom.invalid" class="invalid-feedback">
+										<div *ngIf="nom.errors.required">Nom Tel is required</div>
+										<div *ngIf="nom.errors.nom">Nom Tel must be valid</div>
 									</div>
 							</div>
 						
@@ -86,10 +86,10 @@
 						</div>
 						<div class="Rectangle_283">
 							<div>
-								<input  type="time" class ="nom-css" name="heberg" [(ngModel)]="model.heberg"
-								#heberg="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required heberg>
-									<div *ngIf="f.submitted && heberg.invalid" class="invalid-feedback-time">
-										<div *ngIf="heberg.errors.required">Time is required</div>
+								<input  type="time" class ="nom-css" name="heberg1" [(ngModel)]="model.heberg1"
+								#heberg1="ngModel" [ngClass]="{ 'is-invalid': f.submitted && heberg1.invalid }" required heberg1 >
+									<div *ngIf="f.submitted && heberg1.invalid" class="invalid-feedback-time">
+										<div *ngIf="heberg1.errors.required">Time is required</div>
 									</div>
 							</div>
 						</div>
@@ -107,11 +107,11 @@
 						</div>
 						<div class="Rectangle_24_ds">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="numéro de l'annonce" name="numTel" [(ngModel)]="model.email"
-								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
-									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
-										<div *ngIf="email.errors.required">Num annonce is required</div>
-										<div *ngIf="email.errors.email">Num annonce must be valid</div>
+								<input  type="text" class ="nom-css" placeholder="numéro de l'annonce" name="annonce" [(ngModel)]="model.annonce"
+								#annonce="ngModel" [ngClass]="{ 'is-invalid': f.submitted && annonce.invalid }" required annonce>
+									<div *ngIf="f.submitted && annonce.invalid" class="invalid-feedback">
+										<div *ngIf="annonce.errors.required">Num annonce is required</div>
+										<div *ngIf="annonce.errors.annonce">Num annonce must be valid</div>
 									</div>
 							</div>
 						</div>
@@ -123,11 +123,11 @@
 						</div>
 						<div class="Rectangle_24_dv">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="numTel" [(ngModel)]="model.email"
-								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
-									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
-										<div *ngIf="email.errors.required">Subject is required</div>
-										<div *ngIf="email.errors.email">Subject must be valid</div>
+								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="sujet" [(ngModel)]="model.sujet"
+								#sujet="ngModel" [ngClass]="{ 'is-invalid': f.submitted && sujet.invalid }" required sujet>
+									<div *ngIf="f.submitted && sujet.invalid" class="invalid-feedback">
+										<div *ngIf="sujet.errors.required">Subject is required</div>
+										<div *ngIf="sujet.errors.sujet">Subject must be valid</div>
 									</div>
 							</div>
 						</div>
@@ -139,11 +139,11 @@
 						</div>
 						<div class="Rectangle_24_dy">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="numTel" [(ngModel)]="model.email"
-								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
-									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
-										<div *ngIf="email.errors.required">Message is required</div>
-										<div *ngIf="email.errors.email">Message must be valid</div>
+								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="message" [(ngModel)]="model.message"
+								#message="ngModel" [ngClass]="{ 'is-invalid': f.submitted && message.invalid }" required message>
+									<div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
+										<div *ngIf="message.errors.required">Message is required</div>
+										<div *ngIf="message.errors.message">Message must be valid</div>
 									</div>
 							</div>
 						</div>
