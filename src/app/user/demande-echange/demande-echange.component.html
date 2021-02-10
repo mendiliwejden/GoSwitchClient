@@ -1,0 +1,168 @@
+
+<div id="demande">
+	<img id="ID683501db752baa384a455ffff613" src="ID683501db752baa384a455ffff613.png" srcset="ID683501db752baa384a455ffff613.png 1x">
+		
+	
+	<div id="Demande_dchange">
+		<span>Demande d'échange</span>
+	</div>
+		<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+			<div id="Groupe_613">
+				<div id="Groupe_206">
+					<svg class="Rectangle_66">
+						<rect id="Rectangle_66" rx="76" ry="76" x="0" y="0" width="888" height="713">
+						</rect>
+					</svg>
+				</div>
+				<div id="Groupe_612">
+					
+					<!--------- num tel ---------->
+					<div id="Groupe_608">
+						<div id="Numro_de_tlphone">
+							<span>Numéro de téléphone</span><span style="color:rgba(114,114,114,1);">*</span>
+						</div>
+						<div class="Rectangle_21">
+							<div>
+								<input  type="text" class ="nom-css" placeholder="num-tel" name="numTel" [(ngModel)]="model.email"
+								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+										<div *ngIf="email.errors.required">Num Tel is required</div>
+										<div *ngIf="email.errors.email">Num Tel must be valid</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<!--------- nom ---------->
+					<div id="Groupe_607">
+						<div id="Nom">
+							<span>Nom</span><span style="color:rgba(114,114,114,1);">*</span>
+						</div>
+						<div class="Rectangle_26">
+							<div>
+								<input  type="text" class ="nom-css" placeholder="nom" name="numTel" [(ngModel)]="model.email"
+								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+										<div *ngIf="email.errors.required">Nom Tel is required</div>
+										<div *ngIf="email.errors.email">Nom Tel must be valid</div>
+									</div>
+							</div>
+						
+						</div>
+					</div>
+					<!--------- email ---------->	
+					<div id="Groupe_609">
+						<div id="E-mail">
+							<span>E-mail</span><span style="color:rgba(114,114,114,1);">*</span>
+						</div>
+						<div class="Rectangle_24">
+
+							<div>
+								<input  type="email" class ="nom-css" placeholder="e-mail" name="email" [(ngModel)]="model.email"
+								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+										<div *ngIf="email.errors.required">email is required</div>
+										<div *ngIf="email.errors.email">email must be valid</div>
+									</div>
+							</div>
+							
+
+						</div>
+					</div>
+					<!--------- heébergement ---------->
+					<div id="Groupe_644">
+						<div id="Hbrgement">
+							<span>Hébérgement</span><span style="color:rgba(114,114,114,1);">*</span>
+						</div>
+						<div class="Rectangle_24_dm">
+							<div>
+								<input  type="time" class ="nom-css" name="heberg" [(ngModel)]="model.heberg"
+								#heberg="ngModel" [ngClass]="{ 'is-invalid': f.submitted && heberg.invalid }" required heberg>
+									<div *ngIf="f.submitted && heberg.invalid" class="invalid-feedback-time">
+										<div *ngIf="heberg.errors.required">Time is required</div>
+										
+									</div>
+							</div>
+
+						</div>
+						<div class="Rectangle_283">
+							<div>
+								<input  type="time" class ="nom-css" name="heberg" [(ngModel)]="model.heberg"
+								#heberg="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required heberg>
+									<div *ngIf="f.submitted && heberg.invalid" class="invalid-feedback-time">
+										<div *ngIf="heberg.errors.required">Time is required</div>
+									</div>
+							</div>
+						</div>
+						<div id="De">
+							<span>De</span>
+						</div>
+						<div id="aaa">
+							<span>à</span>
+						</div>
+					</div>
+					<!--------- annonce ---------->
+					<div id="Groupe_645">
+						<div id="Votre_annonce_N">
+							<span>Numéro de l'annonce</span><span style="color:rgba(114,114,114,1);">*</span>
+						</div>
+						<div class="Rectangle_24_ds">
+							<div>
+								<input  type="text" class ="nom-css" placeholder="numéro de l'annonce" name="numTel" [(ngModel)]="model.email"
+								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+										<div *ngIf="email.errors.required">Num annonce is required</div>
+										<div *ngIf="email.errors.email">Num annonce must be valid</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<!--------- sujet ---------->
+					<div id="Groupe_610">
+						<div id="Sujet">
+							<span>Sujet</span><span style="color:rgba(114,114,114,1);">*</span>
+						</div>
+						<div class="Rectangle_24_dv">
+							<div>
+								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="numTel" [(ngModel)]="model.email"
+								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+										<div *ngIf="email.errors.required">Subject is required</div>
+										<div *ngIf="email.errors.email">Subject must be valid</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<!--------- message ---------->
+					<div id="Groupe_611">
+						<div id="Message">
+							<span>Message</span><span style="color:rgba(114,114,114,1);">*</span>
+						</div>
+						<div class="Rectangle_24_dy">
+							<div>
+								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="numTel" [(ngModel)]="model.email"
+								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+										<div *ngIf="email.errors.required">Message is required</div>
+										<div *ngIf="email.errors.email">Message must be valid</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				
+			</div>
+			<div id="Groupe_166">		
+				<div>
+					<button id="envoyer">Envoyer</button>
+				</div>
+
+			</div>
+		</form>
+	<div id="_champ_obligatoire">
+		<span>* champ obligatoire</span>
+	</div>
+
+	<app-header></app-header>
+
+</div>
