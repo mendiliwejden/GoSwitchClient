@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditProfileComponent } from './shared/profile/edit-profile/edit-profile.component';
 import { EditPasswordComponent } from './shared/profile/edit-password/edit-password.component';
+import { DemandeEchangeComponent } from './user/demande-echange/demande-echange.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { EditPasswordComponent } from './shared/profile/edit-password/edit-passw
     MyHomeComponent,
     DestinationComponent,
     EditProfileComponent,
-    EditPasswordComponent
+    EditPasswordComponent,
+    DemandeEchangeComponent
   ],
   imports: [
     BrowserModule,

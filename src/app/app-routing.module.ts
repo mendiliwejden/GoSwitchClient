@@ -10,6 +10,7 @@ import { MyHomeComponent } from './user/my-home/my-home.component';
 import { DestinationComponent } from './user/destination/destination.component';
 import { EditPasswordComponent } from './shared/profile/edit-password/edit-password.component';
 import { EditProfileComponent } from './shared/profile/edit-profile/edit-profile.component';
+import { DemandeEchangeComponent } from './user/demande-echange/demande-echange.component';
 
 
 const routes: Routes = [
@@ -46,9 +47,15 @@ const routes: Routes = [
     component: ContactComponent,
   },
   {
+    path: "echange",
+    component: DemandeEchangeComponent,
+  },
+  
+  {
     path: "**",
     component: ErrorComponent,
   },
+
 ];
 
 @NgModule({
