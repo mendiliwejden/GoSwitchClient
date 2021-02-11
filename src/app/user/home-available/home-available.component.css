@@ -1,0 +1,423 @@
+
+	.mediaViewInfo {
+		--web-view-name: maisons disponibles;
+		--web-view-id: maisons_disponibles;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: maisons_disponibles;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#maisons_disponibles {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(236,203,255,1);
+		overflow: hidden;
+		--web-view-name: maisons disponibles;
+		--web-view-id: maisons_disponibles;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#ID683501db752baa384a455ffff613 {
+		position: absolute;
+		width: 2322.5px;
+		height: 992px;
+		left: -36px;
+		top: 88px;
+		overflow: visible;
+	}
+	#Maisons_disponibles_cf {
+		left: 158px;
+		top: 115px;
+		position: absolute;
+		overflow: visible;
+		width: 469px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+	#Groupe_629 {
+		position: absolute;
+		width: 87px;
+		height: 87px;
+		left: 33px;
+		top: 100px;
+		overflow: visible;
+	}
+	#Ellipse_21 {
+		fill: rgba(255,255,255,1);
+	}
+	.Ellipse_21 {
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		height: 87px;
+		left: 0px;
+		top: 0px;
+	}
+	#Groupe_162 {
+		position: absolute;
+		width: 58.035px;
+		height: 49.33px;
+		left: 14.523px;
+		top: 18.795px;
+		overflow: visible;
+	}
+	#Trac_37 {
+		fill: rgba(148,182,206,1);
+	}
+	.Trac_37 {
+		overflow: visible;
+		position: absolute;
+		width: 58.035px;
+		height: 49.33px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Groupe_614 {
+		position: absolute;
+		width: 1920px;
+		height: 89px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_3_cm {
+		fill: url(#Rectangle_3_cm);
+	}
+	.Rectangle_3_cm {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+	}
+	#iconsocialnotifications_24px {
+		position: absolute;
+		width: 57px;
+		height: 58px;
+		left: 1700px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Boundary {
+		fill: transparent;
+	}
+	.Boundary {
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color {
+		fill: rgba(255,255,255,1);
+	}
+	._Color {
+		overflow: visible;
+		position: absolute;
+		width: 50.315px;
+		height: 54.778px;
+		left: 3.246px;
+		top: 1.623px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#icontogglestar_24px {
+		position: absolute;
+		width: 56.148px;
+		height: 63.3px;
+		left: 1792.412px;
+		top: 11px;
+		overflow: visible;
+	}
+	#Boundary_cr {
+		fill: transparent;
+	}
+	.Boundary_cr {
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		height: 56px;
+		left: -0.411px;
+		top: 0px;
+	}
+	#_Color_cs {
+		fill: rgba(255,255,255,1);
+	}
+	._Color_cs {
+		overflow: visible;
+		position: absolute;
+		width: 54.272px;
+		height: 59.242px;
+		left: 1.876px;
+		top: 4.058px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#question_answer-24px {
+		position: absolute;
+		width: 58.323px;
+		height: 58.323px;
+		left: 1606.035px;
+		top: 17.492px;
+		overflow: visible;
+	}
+	#Trac_21 {
+		fill: transparent;
+	}
+	.Trac_21 {
+		overflow: visible;
+		position: absolute;
+		width: 58.323px;
+		height: 58.322px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_22 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_22 {
+		overflow: visible;
+		position: absolute;
+		width: 48.603px;
+		height: 48.603px;
+		left: 4.86px;
+		top: 4.86px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#account_circle-24px {
+		position: absolute;
+		width: 64.816px;
+		height: 64.815px;
+		left: 1505.797px;
+		top: 14.246px;
+		overflow: visible;
+	}
+	#Trac_19 {
+		fill: transparent;
+	}
+	.Trac_19 {
+		overflow: visible;
+		position: absolute;
+		width: 64.815px;
+		height: 64.815px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_20 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_20 {
+		overflow: visible;
+		position: absolute;
+		width: 54.013px;
+		height: 54.013px;
+		left: 5.401px;
+		top: 5.401px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ma_maison {
+		left: 465px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Acceuil {
+		left: 234px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 106px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Toutes_les_annonces {
+		left: 1086px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 293px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Ma_destination {
+		filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.549));
+		left: 748px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 213px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#GO_SWITCH {
+		left: 31px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 150px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Monotype Corsiva;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 41px;
+		color: rgba(239,101,138,1);
+	}
+	#Groupe_470 {
+		position: absolute;
+		width: 895px;
+		height: 518px;
+		left: 120px;
+		top: 210px;
+		overflow: visible;
+	}
+	#Groupe_425 {
+		position: absolute;
+		width: 895px;
+		height: 518px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Groupe_426 {
+		position: absolute;
+		width: 895px;
+		height: 518px;
+		left: 0px;
+		top: 400px;
+		overflow: visible;
+	}
+	#Groupe_427 {
+		position: absolute;
+		width: 895px;
+		height: 518px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Groupe_422 {
+		position: absolute;
+		width: 895px;
+		height: 518px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Groupe_417 {
+		position: absolute;
+		width: 891px;
+		height: 518px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Kelibia_Nabeul____-_Villa__2_t {
+		left: 560px;
+		top: 124px;
+		position: absolute;
+		overflow: visible;
+		width: 449px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		color: rgba(222,136,171,1);
+	}
+	#ID148879770_494010321588391_22 {
+		position: absolute;
+		width: 360px;
+		height: 370px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Groupe_421 {
+		position: absolute;
+		width: 187px;
+		height: 49px;
+		left: 708px;
+		top: 384px;
+		overflow: visible;
+		transition: all 0.3s ease-out;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: maison_choisi.html;
+		cursor: pointer;
+	}
+	#Rectangle_60 {
+		fill: rgba(222,136,171,1);
+	}
+	.Rectangle_60 {
+		filter: drop-shadow(-5px -5px 15px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 232px;
+		height: 94px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ouvrir {
+		left: 51px;
+		top: 8px;
+		position: absolute;
+		overflow: visible;
+		width: 86px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 29px;
+		color: rgba(255,255,255,1);
+	}

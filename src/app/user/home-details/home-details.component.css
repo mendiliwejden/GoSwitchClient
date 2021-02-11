@@ -1,0 +1,825 @@
+
+	.mediaViewInfo {
+		--web-view-name: maison choisi;
+		--web-view-id: maison_choisi;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: maison_choisi;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#maison_choisi {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(236,203,255,1);
+		overflow: hidden;
+		--web-view-name: maison choisi;
+		--web-view-id: maison_choisi;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#ID683501db752baa384a455ffff613 {
+		position: absolute;
+		width: 2322.5px;
+		height: 992px;
+		left: -36px;
+		top: 88px;
+		overflow: visible;
+	}
+	#Rectangle_3_cg {
+		fill: url(#Rectangle_3_cg);
+	}
+	.Rectangle_3_cg {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+	}
+	#iconsocialnotifications_24px {
+		position: absolute;
+		width: 57px;
+		height: 58px;
+		left: 1700px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Boundary {
+		fill: transparent;
+	}
+	.Boundary {
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color {
+		fill: rgba(255,255,255,1);
+	}
+	._Color {
+		overflow: visible;
+		position: absolute;
+		width: 50.315px;
+		height: 54.778px;
+		left: 3.246px;
+		top: 1.623px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#icontogglestar_24px {
+		position: absolute;
+		width: 56.148px;
+		height: 63.3px;
+		left: 1792.411px;
+		top: 11px;
+		overflow: visible;
+	}
+	#Boundary_cl {
+		fill: transparent;
+	}
+	.Boundary_cl {
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		height: 56px;
+		left: -0.411px;
+		top: 0px;
+	}
+	#_Color_cm {
+		fill: rgba(255,255,255,1);
+	}
+	._Color_cm {
+		overflow: visible;
+		position: absolute;
+		width: 54.272px;
+		height: 59.242px;
+		left: 1.876px;
+		top: 4.058px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#question_answer-24px {
+		position: absolute;
+		width: 58.323px;
+		height: 58.323px;
+		left: 1606.035px;
+		top: 17.492px;
+		overflow: visible;
+	}
+	#Trac_21 {
+		fill: transparent;
+	}
+	.Trac_21 {
+		overflow: visible;
+		position: absolute;
+		width: 58.323px;
+		height: 58.322px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_22 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_22 {
+		overflow: visible;
+		position: absolute;
+		width: 48.603px;
+		height: 48.603px;
+		left: 4.86px;
+		top: 4.86px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#account_circle-24px {
+		position: absolute;
+		width: 64.816px;
+		height: 64.815px;
+		left: 1505.797px;
+		top: 14.246px;
+		overflow: visible;
+	}
+	#Trac_19 {
+		fill: transparent;
+	}
+	.Trac_19 {
+		overflow: visible;
+		position: absolute;
+		width: 64.815px;
+		height: 64.815px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_20 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_20 {
+		overflow: visible;
+		position: absolute;
+		width: 54.013px;
+		height: 54.013px;
+		left: 5.401px;
+		top: 5.401px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ma_maison {
+		left: 465px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Acceuil {
+		left: 234px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 106px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Toutes_les_annonces {
+		left: 1086px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 293px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Ma_destination {
+		filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.549));
+		left: 748px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 213px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Groupe_dfilant_35 {
+		mix-blend-mode: normal;
+		position: absolute;
+		width: 38px;
+		height: 2465.805px;
+		left: 1863.5px;
+		top: 88px;
+		overflow: hidden;
+	}
+	#Ligne_45 {
+		opacity: 0;
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ligne_45 {
+		overflow: visible;
+		position: absolute;
+		width: 38px;
+		height: 1px;
+		left: 0px;
+		top: 123.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#GO_SWITCH {
+		left: 31px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 150px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Monotype Corsiva;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 41px;
+		color: rgba(239,101,138,1);
+	}
+	#Maison_Ben_foulen__Nabeul {
+		left: 38px;
+		top: 113px;
+		position: absolute;
+		overflow: visible;
+		width: 642px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+	#Groupe_543 {
+		position: absolute;
+		width: 645.927px;
+		height: 326px;
+		left: 104px;
+		top: 518px;
+		overflow: visible;
+	}
+	#Groupe_542 {
+		position: absolute;
+		width: 620.927px;
+		height: 272.252px;
+		left: 25px;
+		top: 53.748px;
+		overflow: visible;
+	}
+	#Groupe_193 {
+		position: absolute;
+		width: 71.02px;
+		height: 96.99px;
+		left: 28.127px;
+		top: 5.252px;
+		overflow: visible;
+	}
+	#wifi-24px {
+		position: absolute;
+		width: 71.02px;
+		height: 63.981px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_16 {
+		fill: transparent;
+	}
+	.Trac_16 {
+		overflow: visible;
+		position: absolute;
+		width: 71.021px;
+		height: 63.981px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_17 {
+		fill: rgba(105,160,200,1);
+	}
+	.Trac_17 {
+		overflow: visible;
+		position: absolute;
+		width: 65.102px;
+		height: 41.462px;
+		left: 2.959px;
+		top: 11.856px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Wi-fi {
+		left: 11.744px;
+		top: 71.99px;
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(105,160,200,1);
+	}
+	#Groupe_194 {
+		position: absolute;
+		width: 76.147px;
+		height: 102.242px;
+		left: 160.927px;
+		top: 0px;
+		overflow: visible;
+	}
+	#tv-24px {
+		position: absolute;
+		width: 76.147px;
+		height: 68.6px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_12 {
+		fill: transparent;
+	}
+	.Trac_12 {
+		overflow: visible;
+		position: absolute;
+		width: 76.146px;
+		height: 68.601px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_13 {
+		fill: rgba(105,160,200,1);
+	}
+	.Trac_13 {
+		overflow: visible;
+		position: absolute;
+		width: 69.802px;
+		height: 51.45px;
+		left: 3.173px;
+		top: 8.575px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#TV {
+		left: 24.168px;
+		top: 76.242px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(105,160,200,1);
+	}
+	#Groupe_195 {
+		position: absolute;
+		width: 127px;
+		height: 101px;
+		left: 299px;
+		top: 1.252px;
+		overflow: visible;
+	}
+	#microwave-24px {
+		position: absolute;
+		width: 84px;
+		height: 76px;
+		left: 24px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_16 {
+		fill: transparent;
+	}
+	.Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		height: 76px;
+		left: 0px;
+		top: 0px;
+	}
+	#Trac_18 {
+		fill: rgba(105,160,200,1);
+	}
+	.Trac_18 {
+		overflow: visible;
+		position: absolute;
+		width: 70.322px;
+		height: 50.683px;
+		left: 7.457px;
+		top: 12.927px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Micro-ondes {
+		left: 0px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 128px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(105,160,200,1);
+	}
+	#Groupe_196 {
+		position: absolute;
+		width: 133px;
+		height: 98.992px;
+		left: 487.927px;
+		top: 3.26px;
+		overflow: visible;
+	}
+	#kitchen-24px {
+		position: absolute;
+		width: 58.291px;
+		height: 73.992px;
+		left: 42.098px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_45 {
+		fill: transparent;
+	}
+	.Trac_45 {
+		overflow: visible;
+		position: absolute;
+		width: 58.29px;
+		height: 73.992px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_46 {
+		fill: rgba(105,160,200,1);
+	}
+	.Trac_46 {
+		overflow: visible;
+		position: absolute;
+		width: 54.755px;
+		height: 61.66px;
+		left: 0px;
+		top: 6.166px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rfrigrateur {
+		left: 0px;
+		top: 73.992px;
+		position: absolute;
+		overflow: visible;
+		width: 134px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(105,160,200,1);
+	}
+	#Groupe_357 {
+		position: absolute;
+		width: 128px;
+		height: 127px;
+		left: 0px;
+		top: 145.252px;
+		overflow: visible;
+	}
+	#Equip_pour__enfants {
+		left: 0px;
+		top: 77px;
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(105,160,200,1);
+	}
+	#child_care-24px {
+		position: absolute;
+		width: 76.5px;
+		height: 76.5px;
+		left: 26px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_55 {
+		fill: transparent;
+	}
+	.Trac_55 {
+		overflow: visible;
+		position: absolute;
+		width: 76.5px;
+		height: 76.5px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ellipse_8 {
+		fill: rgba(105,160,200,1);
+	}
+	.Ellipse_8 {
+		position: absolute;
+		overflow: visible;
+		width: 7.969px;
+		height: 7.969px;
+		left: 42.234px;
+		top: 29.484px;
+	}
+	#Ellipse_9 {
+		fill: rgba(105,160,200,1);
+	}
+	.Ellipse_9 {
+		position: absolute;
+		overflow: visible;
+		width: 7.969px;
+		height: 7.969px;
+		left: 26.297px;
+		top: 29.484px;
+	}
+	#Trac_56 {
+		fill: rgba(105,160,200,1);
+	}
+	.Trac_56 {
+		overflow: visible;
+		position: absolute;
+		width: 70.125px;
+		height: 57.375px;
+		left: 3.188px;
+		top: 9.563px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Caractristiques {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 289px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		color: rgba(0,96,164,1);
+	}
+	#Consulter {
+		opacity: 0;
+		left: 1284px;
+		top: 333px;
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		color: rgba(86,86,86,1);
+	}
+	#ID148879770_494010321588391_22 {
+		position: absolute;
+		width: 489px;
+		height: 652px;
+		left: 1161px;
+		top: 192px;
+		overflow: visible;
+	}
+	#icontogglestar_24px_dx {
+		position: absolute;
+		width: 68.476px;
+		height: 76.805px;
+		left: 715.688px;
+		top: 103.098px;
+		overflow: visible;
+	}
+	#Boundary_dy {
+		fill: transparent;
+	}
+	.Boundary_dy {
+		position: absolute;
+		overflow: visible;
+		width: 65.769px;
+		height: 65.769px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color_dz {
+		fill: transparent;
+		stroke: rgba(105,160,200,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 10;
+		shape-rendering: auto;
+	}
+	._Color_dz {
+		overflow: visible;
+		position: absolute;
+		width: 66.188px;
+		height: 72.747px;
+		left: 2.287px;
+		top: 4.058px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Groupe_545 {
+		position: absolute;
+		width: 651px;
+		height: 72px;
+		left: 635px;
+		top: 959px;
+		overflow: visible;
+		transition: all 0.3s ease-out;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: demande.html;
+		cursor: pointer;
+	}
+	#Groupe_234 {
+		position: absolute;
+		width: 651px;
+		height: 72px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_60 {
+		fill: rgba(105,160,200,1);
+	}
+	.Rectangle_60 {
+		filter: drop-shadow(-6px -10px 15px rgba(64, 64, 64, 0.459));
+		position: absolute;
+		overflow: visible;
+		width: 696px;
+		height: 117px;
+		left: 0px;
+		top: 0px;
+	}
+	#Groupe_544 {
+		position: absolute;
+		width: 557.955px;
+		height: 41.193px;
+		left: 46.662px;
+		top: 15.555px;
+		overflow: visible;
+	}
+	#Envoyer_une_demande_dchange {
+		left: 0px;
+		top: 1.818px;
+		position: absolute;
+		overflow: visible;
+		width: 493px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 31px;
+		color: rgba(255,255,255,1);
+	}
+	#ID9930488011596026814 {
+		position: absolute;
+		width: 41.193px;
+		height: 41.193px;
+		left: 516.763px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_81 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 10;
+		shape-rendering: auto;
+	}
+	.Trac_81 {
+		overflow: visible;
+		position: absolute;
+		width: 45.192px;
+		height: 45.192px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ligne_46 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 10;
+		shape-rendering: auto;
+	}
+	.Ligne_46 {
+		overflow: visible;
+		position: absolute;
+		width: 26.743px;
+		height: 26.743px;
+		left: 19.125px;
+		top: 0.98px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Groupe_546 {
+		position: absolute;
+		width: 368px;
+		height: 223px;
+		left: 104px;
+		top: 221px;
+		overflow: visible;
+	}
+	#___-_Villa__2_tages_____-_2_ch {
+		left: 36px;
+		top: 44px;
+		position: absolute;
+		overflow: visible;
+		width: 333px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		color: rgba(105,160,200,1);
+	}
+	#Proprits {
+		left: 0px;
+		top: -10px;
+		position: absolute;
+		overflow: visible;
+		width: 182px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		color: rgba(0,96,164,1);
+	}
+	#Echange__de_17_juillet__25_jui {
+		left: 1157px;
+		top: 825px;
+		position: absolute;
+		overflow: visible;
+		width: 498px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 33px;
+		color: rgba(105,160,200,1);
+	}
