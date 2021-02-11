@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
+  emailstring= "mailto:mendili.wejden@gmail.com?Subject=Hello&body=links:  %0D http://link1.com  %0D http://link1.com";
+
   ngOnInit() {
   }
 

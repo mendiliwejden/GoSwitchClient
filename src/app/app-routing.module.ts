@@ -11,6 +11,8 @@ import { DestinationComponent } from './user/destination/destination.component';
 import { EditPasswordComponent } from './shared/profile/edit-password/edit-password.component';
 import { EditProfileComponent } from './shared/profile/edit-profile/edit-profile.component';
 import { DemandeEchangeComponent } from './user/demande-echange/demande-echange.component';
+import { HomeAvailableComponent } from './user/home-available/home-available.component';
+import { HomeDetailsComponent } from './user/home-details/home-details.component';
 
 
 const routes: Routes = [
@@ -49,6 +51,14 @@ const routes: Routes = [
   {
     path: "echange",
     component: DemandeEchangeComponent,
+  },
+  {
+    path: "maisonDispo",
+    component: HomeAvailableComponent,
+  },
+  {
+    path: "homeDteail",
+    component: HomeDetailsComponent,
   },
   
   {

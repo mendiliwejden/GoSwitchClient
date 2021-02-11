@@ -8,6 +8,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  emailstring= "mailto:mendili.wejden@gmail.com?Subject=Hello&body=links:  %0D http://link1.com  %0D http://link1.com";
+
   registerForm: FormGroup;
   submitted = false;
 
