@@ -38,7 +38,7 @@
 #ID683501db752baa384a455ffff613 {
 	position: absolute;
 	width: 2322.5px;
-	height: 992px;
+	height: 2500px;
 	left: -36px;
 	top: 80px;
 	overflow: visible;
@@ -47,7 +47,7 @@
 	position: absolute;
 	width: 952.805px;
 	height: 1989.089px;
-	left: 28px;
+	left: 320px;
 	top: 211.797px;
 	overflow: visible;
 }
@@ -138,7 +138,8 @@
 	overflow: visible;
 }
 #nabeul_cn {
-	fill: rgba(0,96,164,1);
+	/* fill: rgba(0,96,164,1); */
+	fill: rgba(105,160,200,1);
 }
 .nabeul_cn {
 	overflow: visible;
