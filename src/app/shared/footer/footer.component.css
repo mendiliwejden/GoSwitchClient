@@ -2530,7 +2530,7 @@
 }
 #GO_SWITCH_iz {
     left: 63px;
-    top: 188.32px;
+    top: 250px;
     position: absolute;
     overflow: visible;
     width: 258px;
@@ -2544,7 +2544,7 @@
 }
 #Conditions_gnrales_dutilisatio {
     left: 444px;
-    top: 282px;
+    top: 350px;
     position: absolute;
     overflow: visible;
     width: 568px;
@@ -2566,7 +2566,7 @@
 }
 #Nous_contactez {
     left: 5px;
-    top: 40px;
+    top: 78px;
     position: absolute;
     overflow: visible;
     width: 218px;
@@ -2578,14 +2578,7 @@
     font-size: 29px;
     color: rgba(114,114,114,1);
 }
-#Groupe_561 {
-    position: absolute;
-    width: 68.322px;
-    height: 68.322px;
-    left: 0px;
-    top: 91.268px;
-    overflow: visible;
-}
+
 #Facebook-f_Logo-Grey-Logowine {
     position: absolute;
     width: 68.322px;
@@ -2623,7 +2616,7 @@
     width: 67.452px;
     height: 67.452px;
     left: 216.377px;
-    top: 91.268px;
+    top: 130px;
     overflow: visible;
 }
 #Social-Icons---Rounded {
@@ -2675,7 +2668,7 @@
     width: 83.018px;
     height: 67.451px;
     left: 317.701px;
-    top: 91.268px;
+    top: 130px;
     transform: matrix(1,0,0,1,0,0);
 }
 #XMLID_1346_ {
@@ -2683,7 +2676,7 @@
     width: 67.452px;
     height: 67.452px;
     left: 434.592px;
-    top: 91.268px;
+    top: 130px;
     overflow: visible;
 }
 #XMLID_1418__jf {
@@ -2747,7 +2740,7 @@
     width: 85.024px;
     height: 63.512px;
     left: 102.195px;
-    top: 97.078px;
+    top: 130px;
     overflow: visible;
 }
 #Rectangle_279 {
@@ -2787,7 +2780,7 @@
 }
 #Contrat_dchange_de_maisons {
     left: 444px;
-    top: 218px;
+    top: 295px;
     position: absolute;
     overflow: visible;
     width: 384px;

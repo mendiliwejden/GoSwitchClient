@@ -2501,7 +2501,7 @@
 }
 #GO_SWITCH {
     left: 31px;
-    top: 0px;
+    top: -12px;
     position: absolute;
     overflow: visible;
     width: 150px;
@@ -2510,7 +2510,7 @@
     font-family: Monotype Corsiva;
     font-style: normal;
     font-weight: normal;
-    font-size: 41px;
+    font-size: 38px;
     color: rgba(239,101,138,1);
 }
 a {

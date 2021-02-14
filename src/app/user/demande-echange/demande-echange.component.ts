@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './demande-echange.component.html',
   styleUrls: ['./demande-echange.component.css']
 })
-export class DemandeEchangeComponent implements OnInit {
+export class DemandeEchangeComponent  {
 
-  constructor() { }
+  model: any = {};
 
-  ngOnInit() {
+  onSubmit() {
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.model, null, 4));
   }
 
+  
 }
+
