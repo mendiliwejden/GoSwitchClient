@@ -97,12 +97,12 @@ const routes: Routes = [
     component:  JendoubaComponent
   },
   {
-    path:  'kairouan',
-    component:  KairouanComponent
-  },
-  {
     path:  'kasserine',
     component:  KasserineComponent
+  },
+  {
+    path:  'kairouan',
+    component:  KairouanComponent
   },
   {
     path:  'kebili',
