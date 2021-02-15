@@ -44,6 +44,12 @@ import { SilianaComponent } from './user/Region/siliana/siliana.component';
 import { TataouineComponent } from './user/Region/tataouine/tataouine.component';
 import { TozeurComponent } from './user/Region/tozeur/tozeur.component';
 import { ZaghouanComponent } from './user/Region/zaghouan/zaghouan.component';
+import { HeaderAdminComponent } from './admin/shared/header-admin/header-admin.component';
+import { NavbarAdminComponent } from './admin/shared/navbar-admin/navbar-admin.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { ListClientComponent } from './admin/list-client/list-client.component';
+import { ValidateEchangeComponent } from './admin/validate-echange/validate-echange.component';
+import { ValidateHomeComponent } from './admin/validate-home/validate-home.component';
 
 
 @NgModule({
@@ -86,7 +92,14 @@ import { ZaghouanComponent } from './user/Region/zaghouan/zaghouan.component';
     SilianaComponent,
     TataouineComponent,
     TozeurComponent,
-    ZaghouanComponent
+    ZaghouanComponent,
+    HeaderAdminComponent,
+    NavbarAdminComponent,
+    DashboardComponent,
+    ListClientComponent,
+    ValidateEchangeComponent,
+    ValidateHomeComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -37,6 +37,10 @@ import { SilianaComponent } from './user/Region/siliana/siliana.component';
 import { TataouineComponent } from './user/Region/tataouine/tataouine.component';
 import { TozeurComponent } from './user/Region/tozeur/tozeur.component';
 import { ZaghouanComponent } from './user/Region/zaghouan/zaghouan.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { ValidateHomeComponent } from './admin/validate-home/validate-home.component';
+import { ValidateEchangeComponent } from './admin/validate-echange/validate-echange.component';
+import { ListClientComponent } from './admin/list-client/list-client.component';
 
 
 const routes: Routes = [
@@ -179,6 +183,22 @@ const routes: Routes = [
   {
     path: "homeDteail",
     component: HomeDetailsComponent,
+  },
+  {
+    path: "dashboard",
+    component: DashboardComponent,
+  },
+  {
+    path: "dashboard/validateHome",
+    component: ValidateHomeComponent,
+  },
+  {
+    path: "dashboard/validateEchange",
+    component: ValidateEchangeComponent,
+  },
+  {
+    path: "dashboard/listClient",
+    component: ListClientComponent,
   },
   
   {
