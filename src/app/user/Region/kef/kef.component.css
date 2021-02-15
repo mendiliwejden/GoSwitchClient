@@ -1,0 +1,2072 @@
+
+	.mediaViewInfo {
+		--web-view-name: rubriques;
+		--web-view-id: rubriques;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: rubriques;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#rubriques {
+		position: absolute;
+		width: 1920px;
+		height: 2686px;
+		background-color: rgba(236,203,255,1);
+		overflow: hidden;
+		--web-view-name: rubriques;
+		--web-view-id: rubriques;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#ID683501db752baa384a455ffff613 {
+		position: absolute;
+		width: 2322.5px;
+		height: 2200px;
+		left: -36px;
+		top: 88px;
+		overflow: visible;
+	}
+	#Groupe_17 {
+		position: absolute;
+		width: 952.805px;
+		height: 1989.089px;
+		left: 28px;
+		top: 211.797px;
+		overflow: visible;
+	}
+	#Groupe_134 {
+		position: absolute;
+		width: 952.805px;
+		height: 1989.089px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Governorates_of_Tunisia_blank {
+		position: absolute;
+		width: 952.805px;
+		height: 1989.089px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#path1315 {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.path1315 {
+		overflow: visible;
+		position: absolute;
+		width: 955.276px;
+		height: 1991.723px;
+		left: 0.028px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#path2190 {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.path2190 {
+		overflow: visible;
+		position: absolute;
+		width: 86.14px;
+		height: 72.609px;
+		left: 748.834px;
+		top: 965.097px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#kasserine {
+		position: absolute;
+		width: 245.021px;
+		height: 310.782px;
+		left: 182.102px;
+		top: 436.686px;
+		overflow: visible;
+	}
+	#kasserine_cl {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.kasserine_cl {
+		overflow: visible;
+		position: absolute;
+		width: 246.021px;
+		height: 311.788px;
+		left: 0px;
+		top: -0.001px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#nabeul {
+		position: absolute;
+		width: 175.118px;
+		height: 200.674px;
+		left: 663.975px;
+		top: 69.82px;
+		overflow: visible;
+	}
+	#nabeul_cn {
+		/* fill: rgba(0,96,164,1); */
+        fill: rgba(105,160,200,1);
+	}
+	.nabeul_cn {
+		overflow: visible;
+		position: absolute;
+		width: 175.117px;
+		height: 200.674px;
+		left: 0.001px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#tataouine {
+		position: absolute;
+		width: 697.249px;
+		height: 847.41px;
+		left: 202.188px;
+		top: 1141.679px;
+		overflow: visible;
+	}
+	#tataouine_cp {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.tataouine_cp {
+		overflow: visible;
+		position: absolute;
+		width: 699.182px;
+		height: 848.479px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#medenine {
+		position: absolute;
+		width: 424.34px;
+		height: 407.884px;
+		left: 528.457px;
+		top: 1017.11px;
+		overflow: visible;
+	}
+	#medenine_cr {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.medenine_cr {
+		overflow: visible;
+		position: absolute;
+		width: 425.34px;
+		height: 409.527px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#gabs {
+		position: absolute;
+		width: 280.775px;
+		height: 283.559px;
+		left: 409.336px;
+		top: 854.188px;
+		overflow: visible;
+	}
+	#gabs_ct {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.gabs_ct {
+		overflow: visible;
+		position: absolute;
+		width: 282.194px;
+		height: 284.624px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#kbili {
+		position: absolute;
+		width: 527.005px;
+		height: 471.347px;
+		left: 53.421px;
+		top: 878.871px;
+		overflow: visible;
+	}
+	#kbili_cv {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.kbili_cv {
+		overflow: visible;
+		position: absolute;
+		width: 528.631px;
+		height: 472.375px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#tozeur {
+		position: absolute;
+		width: 272.426px;
+		height: 313.204px;
+		left: 0px;
+		top: 785.279px;
+		overflow: visible;
+	}
+	#tozeur_cx {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.tozeur_cx {
+		overflow: visible;
+		position: absolute;
+		width: 273.426px;
+		height: 314.94px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#gafsa {
+		position: absolute;
+		width: 360.03px;
+		height: 185.975px;
+		left: 123.236px;
+		top: 725.748px;
+		overflow: visible;
+	}
+	#gafsa_cz {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.gafsa_cz {
+		overflow: visible;
+		position: absolute;
+		width: 361.275px;
+		height: 187.09px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#sfax {
+		position: absolute;
+		width: 301.164px;
+		height: 303.886px;
+		left: 520.229px;
+		top: 588.658px;
+		overflow: visible;
+	}
+	#sfax_c {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.sfax_c {
+		overflow: visible;
+		position: absolute;
+		width: 302.164px;
+		height: 305.008px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#mahdia {
+		position: absolute;
+		width: 225.902px;
+		height: 136.909px;
+		left: 625.619px;
+		top: 492.828px;
+		overflow: visible;
+	}
+	#mahdia_c {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.mahdia_c {
+		overflow: visible;
+		position: absolute;
+		width: 227.164px;
+		height: 137.909px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#monastir {
+		position: absolute;
+		width: 125.292px;
+		height: 95.226px;
+		left: 701.546px;
+		top: 434.567px;
+		overflow: visible;
+	}
+	#monastir_c {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.monastir_c {
+		overflow: visible;
+		position: absolute;
+		width: 126.898px;
+		height: 96.692px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#kairouan {
+		position: absolute;
+		width: 239.937px;
+		height: 318.284px;
+		left: 414.841px;
+		top: 337.527px;
+		overflow: visible;
+	}
+	#kairouan_c {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.kairouan_c {
+		overflow: visible;
+		position: absolute;
+		width: 241.247px;
+		height: 319.799px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#sousse {
+		position: absolute;
+		width: 125.052px;
+		height: 238.123px;
+		left: 620.174px;
+		top: 270.494px;
+		overflow: visible;
+	}
+	#sousse_c {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.sousse_c {
+		overflow: visible;
+		position: absolute;
+		width: 126.241px;
+		height: 239.635px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#sidi_bouzid {
+		position: absolute;
+		width: 289.971px;
+		height: 355.309px;
+		left: 309.633px;
+		top: 517.451px;
+		overflow: visible;
+	}
+	#sidi_bouzid_db {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.sidi_bouzid_db {
+		overflow: visible;
+		position: absolute;
+		width: 291.322px;
+		height: 356.647px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#siliana {
+		position: absolute;
+		width: 198.072px;
+		height: 277.811px;
+		left: 330.385px;
+		top: 247.747px;
+		overflow: visible;
+	}
+	#siliana_dd {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.siliana_dd {
+		overflow: visible;
+		position: absolute;
+		width: 199.54px;
+		height: 279.322px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#kef {
+		position: absolute;
+		width: 208.056px;
+		height: 224.21px;
+		left: 179.379px;
+		top: 256.519px;
+		overflow: visible;
+	}
+	#kef_df {
+        fill: rgb(2, 111, 189);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.kef_df {
+		overflow: visible;
+		position: absolute;
+		width: 209.06px;
+		height: 225.353px;
+		left: 0px;
+		top: 0.001px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#zaghouan {
+		position: absolute;
+		width: 187.546px;
+		height: 179.319px;
+		left: 484.655px;
+		top: 191.664px;
+		overflow: visible;
+	}
+	#zaghouan_dh {
+        
+        fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.zaghouan_dh {
+		overflow: visible;
+		position: absolute;
+		width: 188.99px;
+		height: 180.318px;
+		left: 0.001px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ben_arous {
+		position: absolute;
+		width: 104.482px;
+		height: 94.439px;
+		left: 577.038px;
+		top: 157.422px;
+		overflow: visible;
+	}
+	#ben_arous_dj {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.ben_arous_dj {
+		overflow: visible;
+		position: absolute;
+		width: 105.688px;
+		height: 95.493px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#jandouba {
+		position: absolute;
+		width: 209.389px;
+		height: 191.299px;
+		left: 161.592px;
+		top: 90.692px;
+		overflow: visible;
+	}
+	#path2289 {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.path2289 {
+		overflow: visible;
+		position: absolute;
+		width: 210.401px;
+		height: 192.887px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#tunis {
+		position: absolute;
+		width: 78.043px;
+		height: 60.559px;
+		left: 590.046px;
+		top: 124.27px;
+		overflow: visible;
+	}
+	#tunis_dn {
+        
+        fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.tunis_dn {
+		overflow: visible;
+		position: absolute;
+		width: 79.204px;
+		height: 61.694px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ariana {
+		position: absolute;
+		width: 84.576px;
+		height: 87.602px;
+		left: 574.982px;
+		top: 61.592px;
+		overflow: visible;
+	}
+	#ariana_dp {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.ariana_dp {
+		overflow: visible;
+		position: absolute;
+		width: 85.875px;
+		height: 88.729px;
+		left: -0.001px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#manouba {
+		position: absolute;
+		width: 119.122px;
+		height: 114.041px;
+		left: 480.966px;
+		top: 106.785px;
+		overflow: visible;
+	}
+	#manouba_dr {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.manouba_dr {
+		overflow: visible;
+		position: absolute;
+		width: 120.438px;
+		height: 115.246px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#beja {
+		position: absolute;
+		width: 220.7px;
+		height: 227.899px;
+		left: 329.295px;
+		top: 48.646px;
+		overflow: visible;
+	}
+	#path2304 {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.path2304 {
+		overflow: visible;
+		position: absolute;
+		width: 222.222px;
+		height: 229.036px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#bizerte {
+		position: absolute;
+		width: 271.095px;
+		height: 164.254px;
+		left: 370.979px;
+		top: 0.004px;
+		overflow: visible;
+	}
+	#bizerte_dv {
+		fill: rgba(105,160,200,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.bizerte_dv {
+		overflow: visible;
+		position: absolute;
+		width: 272.15px;
+		height: 165.261px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Groupe_11 {
+		position: absolute;
+		width: 728px;
+		height: 1444px;
+		left: 88px;
+		top: 63.202px;
+		overflow: visible;
+	}
+	#Groupe_2 {
+		position: absolute;
+		width: 728px;
+		height: 1444px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Groupe_1 {
+		position: absolute;
+		width: 728px;
+		height: 1444px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_1 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_1 {
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		left: 257.716px;
+		top: 488.233px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Bizerte_d {
+		left: 359px;
+		top: 0.001px;
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Ariana_d {
+		left: 492px;
+		top: 43.001px;
+		position: absolute;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Tunis_d {
+		transform: translate(-0.323px, 0.103px) matrix(1,0,0,1,504.0469,82.622) rotate(-15deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Manouba_d {
+		transform: translate(-0.323px, 0.103px) matrix(1,0,0,1,408.0824,73.2643) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 90px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Bja {
+		left: 335px;
+		top: 118.001px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Jandouba_d {
+		left: 154px;
+		top: 121.001px;
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Kef_d {
+		left: 161px;
+		top: 278.001px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Siliana_d {
+		left: 324px;
+		top: 278.001px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Zaghouan_d {
+		left: 445px;
+		top: 216.001px;
+		position: absolute;
+		overflow: visible;
+		width: 102px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Ben_Arous_d {
+		transform: translate(-0.323px, 0.103px) matrix(1,0,0,1,527.3228,107.898) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Nabeul_ea {
+		left: 620px;
+		top: 118.001px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Sousse_eb {
+		left: 551px;
+		top: 331.001px;
+		position: absolute;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Monastir_ec {
+		left: 635px;
+		top: 414.001px;
+		position: absolute;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#Kairouan_ed {
+		left: 414px;
+		top: 403.001px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Kasserine_ee {
+		left: 161px;
+		top: 511.001px;
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Sidi_Bouzid_ef {
+		left: 328px;
+		top: 642.001px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Sfax_eg {
+		left: 551px;
+		top: 642.001px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#Gafsa_eh {
+		left: 183px;
+		top: 722.001px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Gabs_ei {
+		left: 394px;
+		top: 898.001px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Medenine_ej {
+		left: 599px;
+		top: 1029.001px;
+		position: absolute;
+		overflow: visible;
+		width: 99px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Kbili_ek {
+		left: 199px;
+		top: 1043.001px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Tozeur_el {
+		left: 0px;
+		top: 854.001px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Tataouine_em {
+		left: 393px;
+		top: 1419.001px;
+		position: absolute;
+		overflow: visible;
+		width: 98px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+	}
+	#Mahdia_en {
+		left: 594px;
+		top: 474.001px;
+		position: absolute;
+		overflow: visible;
+		width: 78px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#Cherchez_votre_destination {
+		left: 38px;
+		top: 113px;
+		position: absolute;
+		overflow: visible;
+		width: 617px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+	#Groupe_629 {
+		position: absolute;
+		width: 87px;
+		height: 87px;
+		left: 1788px;
+		top: 100px;
+		overflow: visible;
+		transition: all 0.3s ease-out;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: maisons disponibles.html;
+		cursor: pointer;
+	}
+	#Ellipse_21 {
+		fill: rgba(255,255,255,1);
+	}
+	.Ellipse_21 {
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		height: 87px;
+		left: 0px;
+		top: 0px;
+	}
+	#Groupe_162 {
+		position: absolute;
+		width: 58.035px;
+		height: 49.33px;
+		left: 14.523px;
+		top: 18.795px;
+		overflow: visible;
+	}
+	#Trac_37 {
+		fill: rgba(148,182,206,1);
+	}
+	.Trac_37 {
+		overflow: visible;
+		position: absolute;
+		width: 58.035px;
+		height: 49.33px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Groupe_648 {
+		position: absolute;
+		width: 792px;
+		height: 364px;
+		left: 1018px;
+		top: 210px;
+		overflow: visible;
+	}
+	#Rectangle_281 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_281 {
+		filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.541));
+		position: absolute;
+		overflow: visible;
+		width: 837px;
+		height: 409px;
+		left: 0px;
+		top: 0px;
+	}
+	#Groupe_647 {
+		position: absolute;
+		width: 704px;
+		height: 333px;
+		left: 44px;
+		top: 18px;
+		overflow: visible;
+	}
+	#Lieux_clbres {
+		left: 238px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 229px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 34px;
+		color: rgba(0,96,164,1);
+	}
+	#iconnavigationchevron_right_24 {
+		position: absolute;
+		width: 101px;
+		height: 101px;
+		left: 603px;
+		top: 125px;
+		overflow: visible;
+	}
+	#Boundary {
+		fill: transparent;
+	}
+	.Boundary {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color {
+		fill: rgba(105,160,200,1);
+	}
+	._Color {
+		overflow: visible;
+		position: absolute;
+		width: 31.356px;
+		height: 50.848px;
+		left: 36.304px;
+		top: 25.424px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#iconnavigationchevron_right_24_e {
+		opacity: 0.4;
+		position: absolute;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 125px;
+		overflow: visible;
+	}
+	#Boundary_e {
+		fill: transparent;
+	}
+	.Boundary_e {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color_e {
+		fill: rgba(105,160,200,1);
+	}
+	._Color_e {
+		overflow: visible;
+		position: absolute;
+		width: 31.356px;
+		height: 50.848px;
+		left: 32.99px;
+		top: 25.424px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ID120087812_1007733079671746_4 {
+		position: absolute;
+		width: 163px;
+		height: 293px;
+		left: 271px;
+		top: 40px;
+		overflow: visible;
+	}
+	#Groupe_649 {
+		position: absolute;
+		width: 792px;
+		height: 364px;
+		left: 1018px;
+		top: 611px;
+		overflow: visible;
+	}
+	#Rectangle_281_e {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_281_e {
+		filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.541));
+		position: absolute;
+		overflow: visible;
+		width: 837px;
+		height: 409px;
+		left: 0px;
+		top: 0px;
+	}
+	#Groupe_647_e {
+		position: absolute;
+		width: 704px;
+		height: 299.5px;
+		left: 44px;
+		top: 18px;
+		overflow: visible;
+	}
+	#Plats_traditionnels {
+		left: 211px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 283px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 34px;
+		color: rgba(0,96,164,1);
+	}
+	#iconnavigationchevron_right_24_fa {
+		position: absolute;
+		width: 101px;
+		height: 101px;
+		left: 603px;
+		top: 125px;
+		overflow: visible;
+	}
+	#Boundary_fa {
+		fill: transparent;
+	}
+	.Boundary_fa {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color_fa {
+		fill: rgba(105,160,200,1);
+	}
+	._Color_fa {
+		overflow: visible;
+		position: absolute;
+		width: 31.356px;
+		height: 50.848px;
+		left: 36.304px;
+		top: 25.424px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#iconnavigationchevron_right_24_fb {
+		opacity: 0.4;
+		position: absolute;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 125px;
+		overflow: visible;
+	}
+	#Boundary_fc {
+		fill: transparent;
+	}
+	.Boundary_fc {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color_fd {
+		fill: rgba(105,160,200,1);
+	}
+	._Color_fd {
+		overflow: visible;
+		position: absolute;
+		width: 31.356px;
+		height: 50.848px;
+		left: 32.99px;
+		top: 25.424px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ID118775980_369612767373109_96 {
+		position: absolute;
+		width: 241.5px;
+		height: 248px;
+		left: 231.25px;
+		top: 51.5px;
+		overflow: visible;
+	}
+	#Groupe_650 {
+		position: absolute;
+		width: 792px;
+		height: 364px;
+		left: 1018px;
+		top: 1007px;
+		overflow: visible;
+	}
+	#Rectangle_281_fg {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_281_fg {
+		filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.541));
+		position: absolute;
+		overflow: visible;
+		width: 837px;
+		height: 409px;
+		left: 0px;
+		top: 0px;
+	}
+	#Groupe_647_fh {
+		position: absolute;
+		width: 704px;
+		height: 299.25px;
+		left: 44px;
+		top: 18px;
+		overflow: visible;
+	}
+	#Vtements_traditionnels {
+		left: 167px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 371px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 34px;
+		color: rgba(0,96,164,1);
+	}
+	#iconnavigationchevron_right_24_fj {
+		position: absolute;
+		width: 101px;
+		height: 101px;
+		left: 603px;
+		top: 125px;
+		overflow: visible;
+	}
+	#Boundary_fk {
+		fill: transparent;
+	}
+	.Boundary_fk {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color_fl {
+		fill: rgba(105,160,200,1);
+	}
+	._Color_fl {
+		overflow: visible;
+		position: absolute;
+		width: 31.356px;
+		height: 50.848px;
+		left: 36.304px;
+		top: 25.424px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#iconnavigationchevron_right_24_fm {
+		opacity: 0.4;
+		position: absolute;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 125px;
+		overflow: visible;
+	}
+	#Boundary_fn {
+		fill: transparent;
+	}
+	.Boundary_fn {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 101px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color_fo {
+		fill: rgba(105,160,200,1);
+	}
+	._Color_fo {
+		overflow: visible;
+		position: absolute;
+		width: 31.356px;
+		height: 50.848px;
+		left: 32.99px;
+		top: 25.424px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ID147395125_707383463479354_73 {
+		position: absolute;
+		width: 165px;
+		height: 247.5px;
+		left: 269.5px;
+		top: 51.75px;
+		overflow: visible;
+	}
+	#Groupe_614 {
+		position: absolute;
+		width: 1920px;
+		height: 89px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_3_fs {
+		fill: url(#Rectangle_3_fs);
+	}
+	.Rectangle_3_fs {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+	}
+	#iconsocialnotifications_24px {
+		position: absolute;
+		width: 57px;
+		height: 58px;
+		left: 1700px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Boundary_fu {
+		fill: transparent;
+	}
+	.Boundary_fu {
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+	}
+	#_Color_fv {
+		fill: rgba(255,255,255,1);
+	}
+	._Color_fv {
+		overflow: visible;
+		position: absolute;
+		width: 50.315px;
+		height: 54.778px;
+		left: 3.246px;
+		top: 1.623px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#icontogglestar_24px {
+		position: absolute;
+		width: 56.148px;
+		height: 63.3px;
+		left: 1792.412px;
+		top: 11px;
+		overflow: visible;
+	}
+	#Boundary_fx {
+		fill: transparent;
+	}
+	.Boundary_fx {
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		height: 56px;
+		left: -0.411px;
+		top: 0px;
+	}
+	#_Color_fy {
+		fill: rgba(255,255,255,1);
+	}
+	._Color_fy {
+		overflow: visible;
+		position: absolute;
+		width: 54.272px;
+		height: 59.242px;
+		left: 1.876px;
+		top: 4.058px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#question_answer-24px {
+		position: absolute;
+		width: 58.323px;
+		height: 58.323px;
+		left: 1606.035px;
+		top: 17.492px;
+		overflow: visible;
+	}
+	#Trac_21 {
+		fill: transparent;
+	}
+	.Trac_21 {
+		overflow: visible;
+		position: absolute;
+		width: 58.323px;
+		height: 58.322px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_22 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_22 {
+		overflow: visible;
+		position: absolute;
+		width: 48.603px;
+		height: 48.603px;
+		left: 4.86px;
+		top: 4.86px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#account_circle-24px {
+		position: absolute;
+		width: 64.816px;
+		height: 64.815px;
+		left: 1505.797px;
+		top: 14.246px;
+		overflow: visible;
+	}
+	#Trac_19 {
+		fill: transparent;
+	}
+	.Trac_19 {
+		overflow: visible;
+		position: absolute;
+		width: 64.815px;
+		height: 64.815px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_20 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_20 {
+		overflow: visible;
+		position: absolute;
+		width: 54.013px;
+		height: 54.013px;
+		left: 5.401px;
+		top: 5.401px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ma_maison {
+		left: 465px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Acceuil {
+		left: 234px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 106px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Toutes_les_annonces {
+		left: 1086px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 293px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Ma_destination {
+		filter: drop-shadow(-3px -3px 15px rgba(80, 80, 80, 0.549));
+		left: 748px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 213px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#GO_SWITCH {
+		left: 31px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 150px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Monotype Corsiva;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 41px;
+		color: rgba(239,101,138,1);
+	}
+	#lowla {
+		position: absolute;
+		width: 1920px;
+		height: 402px;
+		left: 0px;
+		top: 2284px;
+		overflow: visible;
+	}
+	#Rectangle_268 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_268 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 402px;
+		left: 0px;
+		top: 0px;
+	}
+	#GO_SWITCH_gc {
+		left: 63px;
+		top: 188.321px;
+		position: absolute;
+		overflow: visible;
+		width: 258px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Monotype Corsiva;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 71px;
+		color: rgba(239,101,138,1);
+	}
+	#Conditions_gnrales_dutilisatio {
+		left: 444px;
+		top: 282px;
+		position: absolute;
+		overflow: visible;
+		width: 568px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		color: rgba(114,114,114,1);
+	}
+	#Groupe_557 {
+		position: absolute;
+		width: 502.044px;
+		height: 160.59px;
+		left: 1135px;
+		top: 153.705px;
+		overflow: visible;
+	}
+	#Nous_contactez {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 218px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 29px;
+		color: rgba(114,114,114,1);
+	}
+	#Groupe_561 {
+		position: absolute;
+		width: 68.322px;
+		height: 68.322px;
+		left: 0px;
+		top: 91.268px;
+		overflow: visible;
+	}
+	#Facebook-f_Logo-Grey-Logowine {
+		position: absolute;
+		width: 68.322px;
+		height: 68.322px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Trac_61 {
+		fill: rgba(25,119,243,1);
+	}
+	.Trac_61 {
+		overflow: visible;
+		position: absolute;
+		width: 68.322px;
+		height: 67.907px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_62 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_62 {
+		overflow: visible;
+		position: absolute;
+		width: 29.224px;
+		height: 54.978px;
+		left: 20.149px;
+		top: 13.344px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Page-1 {
+		position: absolute;
+		width: 67.452px;
+		height: 67.452px;
+		left: 216.377px;
+		top: 91.268px;
+		overflow: visible;
+	}
+	#Social-Icons---Rounded {
+		position: absolute;
+		width: 67.452px;
+		height: 67.452px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Linkedin {
+		position: absolute;
+		width: 67.452px;
+		height: 67.452px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rounded {
+		fill: rgba(0,126,187,1);
+	}
+	.Rounded {
+		overflow: visible;
+		position: absolute;
+		width: 67.451px;
+		height: 67.452px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_82 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_82 {
+		overflow: visible;
+		position: absolute;
+		width: 48.715px;
+		height: 48.715px;
+		left: 9.368px;
+		top: 9.368px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ID13728386351561032650 {
+		fill: rgba(3,169,244,1);
+	}
+	.ID13728386351561032650 {
+		overflow: visible;
+		position: absolute;
+		width: 83.018px;
+		height: 67.452px;
+		left: 317.701px;
+		top: 91.268px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#XMLID_1346_ {
+		position: absolute;
+		width: 67.452px;
+		height: 67.452px;
+		left: 434.592px;
+		top: 91.267px;
+		overflow: visible;
+	}
+	#XMLID_1418__gs {
+		fill: url(#XMLID_1418__gs);
+	}
+	.XMLID_1418__gs {
+		overflow: visible;
+		position: absolute;
+		width: 67.451px;
+		height: 67.452px;
+		left: 0.001px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#XMLID_1347_ {
+		position: absolute;
+		width: 37.066px;
+		height: 37.066px;
+		left: 15.146px;
+		top: 15.24px;
+		overflow: visible;
+	}
+	#XMLID_1352_ {
+		fill: rgba(255,255,255,1);
+	}
+	.XMLID_1352_ {
+		overflow: visible;
+		position: absolute;
+		width: 37.065px;
+		height: 37.066px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#XMLID_1349_ {
+		fill: rgba(255,255,255,1);
+	}
+	.XMLID_1349_ {
+		overflow: visible;
+		position: absolute;
+		width: 19.004px;
+		height: 19.003px;
+		left: 9.03px;
+		top: 9.031px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#XMLID_1348_ {
+		fill: rgba(255,255,255,1);
+	}
+	.XMLID_1348_ {
+		overflow: visible;
+		position: absolute;
+		width: 4.516px;
+		height: 4.516px;
+		left: 26.152px;
+		top: 6.397px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ID16983312581574338606 {
+		position: absolute;
+		width: 85.024px;
+		height: 63.512px;
+		left: 102.194px;
+		top: 97.078px;
+		overflow: visible;
+	}
+	#Rectangle_279 {
+		fill: rgba(236,239,241,1);
+	}
+	.Rectangle_279 {
+		position: absolute;
+		overflow: visible;
+		width: 63.593px;
+		height: 63.251px;
+		left: 10.499px;
+		top: 0.26px;
+	}
+	#Trac_83 {
+		fill: rgba(207,216,220,1);
+	}
+	.Trac_83 {
+		overflow: visible;
+		position: absolute;
+		width: 31.756px;
+		height: 49.507px;
+		left: 42.684px;
+		top: 14.004px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_84 {
+		fill: rgba(244,67,54,1);
+	}
+	.Trac_84 {
+		overflow: visible;
+		position: absolute;
+		width: 85.024px;
+		height: 63.512px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Contrat_dchange_de_maisons {
+		left: 444px;
+		top: 218px;
+		position: absolute;
+		overflow: visible;
+		width: 384px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		color: rgba(114,114,114,1);
+	}
+    ngb-carousel {
+        width: 300px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50px;
+      }
+      .item {
+        /* position: relative;
+        left: 50%; */
+        height: 250px;
+        width: 300px;
+        transform: translateX((-50%));
+      } 
+      li{
+          display:none;
+      }
+	  #Retour {
+		left: 38px;
+		top: 113px;
+		position: absolute;
+		overflow: visible;
+		width: 617px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+  
+#icons {
+    position: absolute;
+    width: 64.166px;
+    height: 51.189px;
+    left: 975.022px;
+    top: 100px;
+    overflow: visible;
+}
+#share {
+    fill: rgba(105,160,200,1);
+}
+.share {
+    overflow: visible;
+    position: absolute;
+    width: 64.166px;
+    height: 51.189px;
+    left: 9px;
+    top: 13px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_retour {
+    fill: rgba(255,255,255,1);
+}
+.Ellipse_retour {
+    position: absolute;
+    overflow: visible;
+    width: 64.166px;
+    height: 51.189px;
+    left: 0px;
+    top: 0px;
+    
+}
+    
