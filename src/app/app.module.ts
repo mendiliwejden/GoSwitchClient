@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -50,7 +51,8 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { ListClientComponent } from './admin/list-client/list-client.component';
 import { ValidateEchangeComponent } from './admin/validate-echange/validate-echange.component';
 import { ValidateHomeComponent } from './admin/validate-home/validate-home.component';
-
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { ProfileComponent } from './shared/profile/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -99,6 +101,7 @@ import { ValidateHomeComponent } from './admin/validate-home/validate-home.compo
     ListClientComponent,
     ValidateEchangeComponent,
     ValidateHomeComponent,
+    ProfileComponent,
     
   ],
   imports: [
@@ -106,9 +109,10 @@ import { ValidateHomeComponent } from './admin/validate-home/validate-home.compo
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

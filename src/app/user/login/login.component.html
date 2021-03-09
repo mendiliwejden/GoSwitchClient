@@ -11,7 +11,7 @@
 			</svg>
 			<div id="Groupe_235">
 				<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
-					<div id="Connexion_gz">
+					<div id="Connexion_gz" *ngIf="!isLoggedIn">
 						<span>Connexion</span>
 					</div>
 					<!-- Connexion button -->
@@ -26,7 +26,7 @@
 						<div class="Rectangle_24_g">
 							<div id="Rectangle_24_g">
 								<div >
-									<input id="E-mail" type="password" class="E-mail" placeholder="Mot de passe" name="password" [(ngModel)]="model.password" 
+									<input id="mdp" type="password" class="E-mail" placeholder="Mot de passe" name="password" [(ngModel)]="form.password" 
 									#password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6">
 
 									<div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
@@ -43,20 +43,28 @@
 							<div class="Rectangle_24_g">
 									<div id="Rectangle_24_g">
 										<div >
-											<input id="E-mail" type="email" class="E-mail" placeholder="e-mail" name="email" [(ngModel)]="model.email"
-											 #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
-											 <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
-
-												<div *ngIf="email.errors.required">Email is required</div>
-												<div *ngIf="email.errors.email">Email must be a valid email address</div>
-
+											<input id="E-mail" type="text" class="E-mail"[ngClass]="{ 'is-invalid': f.submitted && username.invalid }" placeholder="e-mail" name="username" [(ngModel)]="form.username"
+											 #username="ngModel"  required>
+											 <div *ngIf="f.submitted && username.invalid" class="invalid-feedback">
+												<div *ngIf="username.errors.required">adresse mail obligatoire</div>
 											</div>
 										</div>
 									</div>
 							</div>
 					</div>
+					<div class="form-group">
+						<div
+						  class="alert alert-danger"
+						  role="alert"
+						  *ngIf="f.submitted && isLoginFailed"
+						>
+						  Login failed: {{ errorMessage }}
+						</div>
+					  </div>
 				</form>
-
+				<div class="alert alert-success" *ngIf="isLoggedIn">
+					Logged in as {{ roles }}.
+				  </div>
 
 				<div id="Groupe_188">
 					<a routerLink="/register">
