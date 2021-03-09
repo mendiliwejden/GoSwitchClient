@@ -11,7 +11,11 @@
 			</div>
 		</div>
 		<div id="Groupe_212">
-		<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+		<form *ngIf="!isSuccessful"
+		name="form"
+		(ngSubmit)="f.form.valid && onSubmit()"
+		#f="ngForm"
+		novalidate>
 			<div id="Groupe_206">
 				<svg class="Rectangle_66">
 					<rect id="Rectangle_66" rx="76" ry="76" x="0" y="0" width="1061" height="1882">
@@ -26,15 +30,23 @@
 								<label for="prenom" class="label">Prenom</label><span style="color:rgba(114,114,114,1);">*</span>
 							</div>
 							<div >
-								<input formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }"
-								 id="prenom" type="text" class="Rectangle_26" required>
-								 <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback-Prenom">
-									<div *ngIf="f.lastName.errors.required">Prenom is required</div>
+								<input  type="text"
+          class="form-control"
+          name="firstName"
+          [(ngModel)]="form.firstName"
+          required
+		  [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }"
+		  class="Rectangle_26"
+          #firstName="ngModel">
+		  <div class="invalid-feedback-Prenom" *ngIf="f.submitted && firstName.invalid">
+			<div *ngIf="firstName.errors.required">Prénom obligatoire</div>
+			
+		  </div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				
 				<!-- Num tel -->
 				<div id="Groupe_207">
 					<div id="Groupe_57">
@@ -43,11 +55,17 @@
             				
 						</div>
 						<div >
-							<input formControlName="NumTel" [ngClass]="{ 'is-invalid': submitted && f.NumTel.errors }"
-							  id="numeroDeTelephone" type="text" class="Rectangle_26">
-							  <div *ngIf="submitted && f.NumTel.errors" >
-								<div class="invalid-feedback_Num_tel" *ngIf="f.NumTel.errors.required">Numero is required</div>
-								<div class="invalid" *ngIf="f.NumTel.errors.minlength">Numero must be at least 8 characters</div>
+							<input
+							class="form-control"
+							name="NumTel"
+							[(ngModel)]="form.numTel"
+							required
+							[ngClass]="{ 'is-invalid': f.submitted && numTel.invalid }"
+							class="Rectangle_26"
+							#numTel="ngModel">
+							<div class="invalid-feedback-Prenom"*ngIf="f.submitted && numTel.invalid">
+							  <div  *ngIf="numTel.errors.required">Numéro de téléphone obligatoire</div>
+							  
 							</div>
 						</div>
 					</div>
@@ -60,10 +78,16 @@
 							    <label for="nom" class="label">Nom</label><span style="color:rgba(114,114,114,1);">*</span>
 							</div>
 							<div >
-								<input formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
-								 id="nom" type="text" class="Rectangle_26" required>
-								<div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
-									<div *ngIf="f.firstName.errors.required"> Nom is required</div>
+								<input  class="form-control"
+								name="lastName"
+								[(ngModel)]="form.lastName"
+								required
+								[ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }"
+								class="Rectangle_26"
+								#lastName="ngModel">
+								<div class="invalid-feedback" *ngIf="f.submitted && lastName.invalid">
+								  <div *ngIf="lastName.errors.required">Nom obligatoire</div>
+								  
 								</div>
 							</div>
 						</div>
@@ -106,7 +130,9 @@
 						
 					</div>
 					<div >
-						<input id="facebook" type="text" class="Rectangle_26">
+						<input id="facebook" name="facebook"type="text" class="Rectangle_26" [(ngModel)]="form.facebook"
+						
+						#facebook="ngModel">
 					</div>
 				</div>
 			</div>
@@ -119,9 +145,12 @@
 						
 					</div>
 					<div >
-						<select formControlName="region" [ngClass]="{ 'is-invalid': submitted && f.region.errors }"
-						 id="région" type="text" class="Rectangle_26">
-							<option>Sélectionner votre région</option>
+						<select  [ngClass]="{ 'is-invalid': f.submitted && region.errors}"
+						 id="région" type="text" name="region"class="Rectangle_26" [(ngModel)]="form.region"
+						 required
+						 
+						 #region="ngModel">
+							<option >Sélectionner votre région</option>
 							<option>Tunis</option>
 							<option>Bizerte</option>
 							<option>Monastir</option>
@@ -147,8 +176,8 @@
 							<option>Sousse</option>
 							<option>Mahdia</option>
 						</select>
-						<div *ngIf="submitted && f.region.errors" >
-							<div class="invalid-region" *ngIf="f.region.errors.required">Region is required</div>
+						<div *ngIf="f.submitted && region.errors" >
+							<div class="invalid-region" *ngIf="region.errors.required">Region obligatoire</div>
 						</div>
 					</div>
 					</div>
@@ -187,16 +216,27 @@
 			<div id="Groupe_221">
 				<div id="Groupe_60_d">
 					<div id="Mot_de_passe">
-						<label for="motDePasse" class="label">Mot de passe</label><span style="color:rgba(114,114,114,1);">*</span>
+						<label for="motDePasse"  class="label">Mot de passe</label><span style="color:rgba(114,114,114,1);">*</span>
 						
 					</div>
 					<div >
-						<input formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
-						 id="motDePasse" type="text" class="Rectangle_26" required>
-						 <div *ngIf="submitted && f.password.errors" >
-							<div class="invalid-pass" *ngIf="f.password.errors.required">Password is required</div>
-							<div class="invalid-pass" *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
-						</div>
+						<input
+          type="password"
+          class="form-control"
+          name="password"
+		  [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+          [(ngModel)]="form.password"
+          required
+          minlength="8"
+          #password="ngModel"
+		  class="Rectangle_26"
+        />
+        <div class=".invalid-pass"*ngIf="f.submitted && password.errors">
+          <div class="invalid-region" *ngIf="password.errors.required">Password is required</div>
+          <div class="invalid-region"*ngIf="password.errors.minlength">
+            Password must be at least 8 characters
+          </div>
+        </div>
 					</div>
 				</div>
 			</div>
@@ -208,11 +248,12 @@
 						
 					</div>
 					<div >
-						<input formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
-						 id="Email" type="text" class="Rectangle_26" required>
-						 <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-							<div *ngIf="f.email.errors.required">Email is required</div>
-							<div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+						<input name="username" [(ngModel)]="form.username"class="form-control" [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+						 id="Email" type="text" class="Rectangle_26" required email #username="ngModel"
+						  >
+						 <div *ngIf="f.submitted && username.errors" class="invalid-feedback">
+							<div *ngIf="username.errors.required">Email obligatoire</div>
+							<div *ngIf="username.errors.email">Email must be a valid email address</div>
 						</div>
 					</div>
 				</div>
@@ -225,7 +266,7 @@
 						
 					</div>
 					<div >
-						<input  formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
+						<input   class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
 						 id="confirmerMotDePasse" type="text" class="Rectangle_26" required>
 						 <div *ngIf="submitted && f.confirmPassword.errors" >
 							<div class="invalid-confirm" *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
@@ -242,8 +283,11 @@
 						
 					</div>
 					<div >
-						<select formControlName="destination" [ngClass]="{ 'is-invalid': submitted && f.destination.errors }"
-						 id="destination" type="text" class="Rectangle_26" required>
+						<select  [ngClass]="{ 'is-invalid': f.submitted && destination.errors }"
+						name="destination" id="destination" type="text" [(ngModel)]="form.destination"
+						 required
+						 class="Rectangle_26"
+						 #destination="ngModel">
 							<option>Choisir Destination</option>
 							<option>Tunis</option>
 							<option>Bizerte</option>
@@ -270,8 +314,8 @@
 							<option>Sousse</option>
 							<option>Mahdia</option>
 						</select>
-						<div *ngIf="submitted && f.destination.errors" >
-							<div class="invalid-Destination" *ngIf="f.destination.errors.required">Destination is required</div>
+						<div *ngIf="f.submitted && destination.errors" >
+							<div class="invalid-Destination" *ngIf="destination.errors.required">Destination is required</div>
 						</div>
 					</div>
 				</div>
@@ -293,7 +337,7 @@
 				</div>
 				<div class="Rectangle_24_eo">
 					<div id="Importer">
-						<input formControlName="cin" [ngClass]="{ 'is-invalid': submitted && f.cin.errors }"
+						<input [ngClass]="{ 'is-invalid': submitted && f.cin.errors }"
 						 type = "file" required>
 						 <div *ngIf="submitted && f.cin.errors" class="invalid_file">
 							<div *ngIf="f.cin.errors.required">Cin is required</div>
@@ -315,7 +359,7 @@
 				<div id="Groupe_229">
 					<div class="Rectangle_24_ew">
 						<div id="Importer">
-							<input formControlName="steg" [ngClass]="{ 'is-invalid': submitted && f.steg.errors }"
+							<input [ngClass]="{ 'is-invalid': submitted && f.steg.errors }"
 							 type = "file" required>
 							 <div *ngIf="submitted && f.steg.errors" class="invalid_file">
 								<div *ngIf="f.steg.errors.required">Steg is required</div>
@@ -324,7 +368,13 @@
 					</div>
 				</div>
 			</div>
+			<div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+				Signup failed!<br />{{ errorMessage }}
+			  </div>
 		</form>
+		<div class="alert alert-success" *ngIf="isSuccessful">
+			Your registration is successful!
+		  </div>
 		</div>
 	</div>
 <app-header></app-header>
