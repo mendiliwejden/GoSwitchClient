@@ -1,8 +1,8 @@
 
 <div id="demande">
 	<img id="ID683501db752baa384a455ffff613" src="assets/img/home/ID683501db752baa384a455ffff613.png" srcset="assets/img/home/ID683501db752baa384a455ffff613.png 1x">
-		
-	
+
+
 	<div id="Demande_dchange">
 		<span>Demande d'échange</span>
 	</div>
@@ -15,7 +15,7 @@
 					</svg>
 				</div>
 				<div id="Groupe_612">
-					
+
 					<!--------- num tel ---------->
 					<div id="Groupe_608">
 						<div id="Numro_de_tlphone">
@@ -23,7 +23,7 @@
 						</div>
 						<div class="Rectangle_21">
 							<div>
-								<input type="text" class ="nom-css" placeholder="num-tel" name="numTel" [(ngModel)]="model.numTel"
+								<input type="text" class ="nom-css" placeholder="num-tel" name="numTel" [(ngModel)]="exchangeRequest.numeroTel"
 								#numTel="ngModel" [ngClass]="{ 'is-invalid': f.submitted && numTel.invalid }" required numTel>
 									<div *ngIf="f.submitted && numTel.invalid" class="invalid-feedback">
 										<div *ngIf="numTel.errors.required">Num Tel is required</div>
@@ -39,17 +39,17 @@
 						</div>
 						<div class="Rectangle_26">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="nom" name="nom" [(ngModel)]="model.nom"
+								<input  type="text" class ="nom-css" placeholder="nom" name="nom" [(ngModel)]="exchangeRequest.username"
 								#nom="ngModel" [ngClass]="{ 'is-invalid': f.submitted && nom.invalid }" required nom>
 									<div *ngIf="f.submitted && nom.invalid" class="invalid-feedback">
 										<div *ngIf="nom.errors.required">Nom Tel is required</div>
 										<div *ngIf="nom.errors.nom">Nom Tel must be valid</div>
 									</div>
 							</div>
-						
+
 						</div>
 					</div>
-					<!--------- email ---------->	
+					<!--------- email ---------->
 					<div id="Groupe_609">
 						<div id="E-mail">
 							<span>E-mail</span><span style="color:rgba(114,114,114,1);">*</span>
@@ -57,14 +57,14 @@
 						<div class="Rectangle_24">
 
 							<div>
-								<input  type="email" class ="nom-css" placeholder="e-mail" name="email" [(ngModel)]="model.email"
+								<input  type="email" class ="nom-css" placeholder="e-mail" name="email" [(ngModel)]="exchangeRequest.email"
 								#email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
 									<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
 										<div *ngIf="email.errors.required">email is required</div>
 										<div *ngIf="email.errors.email">email must be valid</div>
 									</div>
 							</div>
-							
+
 
 						</div>
 					</div>
@@ -75,18 +75,18 @@
 						</div>
 						<div class="Rectangle_24_dm">
 							<div>
-								<input  type="time" class ="nom-css" name="heberg" [(ngModel)]="model.heberg"
+								<input  type="date" class ="nom-css" name="heberg" [(ngModel)]="exchangeRequest.debutHeberg"
 								#heberg="ngModel" [ngClass]="{ 'is-invalid': f.submitted && heberg.invalid }" required heberg>
 									<div *ngIf="f.submitted && heberg.invalid" class="invalid-feedback-time">
 										<div *ngIf="heberg.errors.required">Time is required</div>
-										
+
 									</div>
 							</div>
 
 						</div>
 						<div class="Rectangle_283">
 							<div>
-								<input  type="time" class ="nom-css" name="heberg1" [(ngModel)]="model.heberg1"
+								<input  type="date" class ="nom-css" name="heberg1" [(ngModel)]="exchangeRequest.endHeberg"
 								#heberg1="ngModel" [ngClass]="{ 'is-invalid': f.submitted && heberg1.invalid }" required heberg1 >
 									<div *ngIf="f.submitted && heberg1.invalid" class="invalid-feedback-time">
 										<div *ngIf="heberg1.errors.required">Time is required</div>
@@ -107,7 +107,7 @@
 						</div>
 						<div class="Rectangle_24_ds">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="numéro de l'annonce" name="annonce" [(ngModel)]="model.annonce"
+								<input readonly type="text" class ="nom-css" placeholder="numéro de l'annonce" name="annonce" [(ngModel)]="exchangeRequest.annonceNum"
 								#annonce="ngModel" [ngClass]="{ 'is-invalid': f.submitted && annonce.invalid }" required annonce>
 									<div *ngIf="f.submitted && annonce.invalid" class="invalid-feedback">
 										<div *ngIf="annonce.errors.required">Num annonce is required</div>
@@ -123,7 +123,7 @@
 						</div>
 						<div class="Rectangle_24_dv">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="sujet" [(ngModel)]="model.sujet"
+								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="sujet" [(ngModel)]="exchangeRequest.sujet"
 								#sujet="ngModel" [ngClass]="{ 'is-invalid': f.submitted && sujet.invalid }" required sujet>
 									<div *ngIf="f.submitted && sujet.invalid" class="invalid-feedback">
 										<div *ngIf="sujet.errors.required">Subject is required</div>
@@ -139,7 +139,7 @@
 						</div>
 						<div class="Rectangle_24_dy">
 							<div>
-								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="message" [(ngModel)]="model.message"
+								<input  type="text" class ="nom-css" placeholder="sujet de l'annonce" name="message" [(ngModel)]="exchangeRequest.message"
 								#message="ngModel" [ngClass]="{ 'is-invalid': f.submitted && message.invalid }" required message>
 									<div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
 										<div *ngIf="message.errors.required">Message is required</div>
@@ -148,13 +148,13 @@
 							</div>
 						</div>
 					</div>
-				
+
 				</div>
-				
+
 			</div>
-			<div id="Groupe_166">		
+			<div id="Groupe_166">
 				<div>
-					<button id="envoyer">Envoyer</button>
+					<button id="envoyer" type="submit">Envoyer</button>
 				</div>
 
 			</div>

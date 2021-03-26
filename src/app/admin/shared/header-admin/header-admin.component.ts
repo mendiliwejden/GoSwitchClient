@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import {TokenStorageService} from '../../../services/token-storage.service';
 
 @Component({
   selector: 'app-header-admin',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderAdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private tokenStorage: TokenStorageService, ) { }
 
   ngOnInit() {
   }

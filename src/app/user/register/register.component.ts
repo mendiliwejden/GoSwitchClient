@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import {Component, OnInit} from '@angular/core';
+import {AuthService} from '../../services/auth.service';
+import {FormBuilder, FormGroup} from '@angular/forms';
 // import custom validator to validate that password and confirm password fields match
-import { MustMatch } from '../../_helpers/must-match.validator'
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -11,14 +10,26 @@ import { MustMatch } from '../../_helpers/must-match.validator'
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  cinFile;
+  stegFile;
+  public imagePath;
+  photo: any;
+  fakeCin: any;
+  fakeSteg: any;
+  public message: string;
+
+
   form: any = {};
   isSuccessful = false;
   isSignUpFailed = false;
   errorMessage = '';
   registerForm: FormGroup;
   submitted = false;
-  mobilePattern="^((\\+91-?)|0)?[0-9]$"
-  constructor(private formBuilder: FormBuilder, private authService: AuthService) { }
+  mobilePattern = '^((\\+91-?)|0)?[0-9]$';
+
+  constructor(private formBuilder: FormBuilder, private authService: AuthService, private route: Router) {
+  }
+
   ngOnInit(): void {
   }
 
@@ -40,8 +51,9 @@ export class RegisterComponent implements OnInit {
   // });
   // }
   // // convenience getter for easy access to form fields
-  get f() 
-  { return this.registerForm.controls; }
+  get f() {
+    return this.registerForm.controls;
+  }
 
   // onSubmit() {
   //   this.submitted = true;
@@ -64,16 +76,46 @@ export class RegisterComponent implements OnInit {
   // }
 
   onSubmit(): void {
-    this.authService.register(this.form).subscribe(
+    const formData = new FormData();
+    const user = this.form;
+    formData.append('userInfo', JSON.stringify(user));
+    formData.append('cin', this.cinFile);
+    console.log(this.cinFile);
+    formData.append('steg', this.stegFile);
+    console.log(this.stegFile);
+    console.log(formData);
+    this.authService.register(formData).subscribe(
       data => {
         console.log(data);
         this.isSuccessful = true;
         this.isSignUpFailed = false;
+        alert(data.message);
+        this.route.navigate(['login']);
       },
       err => {
         this.errorMessage = err.error.message;
         this.isSignUpFailed = true;
       }
     );
+  }
+
+  onSelectCIN(event) {
+    if (event.target.files.length > 0) {
+      const cin = event.target.files[0];
+      this.cinFile = cin;
+    }
+  }
+
+  onSelectSteg(event) {
+    if (event.target.files.length > 0) {
+      const steg = event.target.files[0];
+      this.stegFile = steg;
+
+      const mimeType = event.target.files[0].type;
+      if (mimeType.match(/image\/*/) == null) {
+        console.log('Only images are supported.');
+        return;
+      }
+    }
   }
 }

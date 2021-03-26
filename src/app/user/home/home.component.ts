@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../services/user.service';
+import {TokenStorageService} from '../../services/token-storage.service';
 
 @Component({
   selector: 'app-home',
@@ -9,11 +10,11 @@ import { UserService } from '../../services/user.service';
 
 export class HomeComponent implements OnInit {
 
-  emailstring= "mailto:mendili.wejden@gmail.com?Subject=Hello&body=links:  %0D http://link1.com  %0D http://link1.com";
+  emailstring = 'mailto:mendili.wejden@gmail.com?Subject=Hello&body=links:  %0D http://link1.com  %0D http://link1.com';
 
   content: string;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private tokenStorage: TokenStorageService) { }
 
   ngOnInit(): void {
     this.userService.getPublicContent().subscribe(
