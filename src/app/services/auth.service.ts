@@ -1,12 +1,12 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
 const AUTH_API = 'http://localhost:8081/api/auth/';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-  
+  headers: new HttpHeaders({'Content-Type': 'application/json'}),
+
 };
 
 @Injectable({
@@ -14,7 +14,8 @@ const httpOptions = {
 })
 export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
   login(credentials): Observable<any> {
     return this.http.post(AUTH_API + 'signin', {
@@ -23,17 +24,7 @@ export class AuthService {
     }, httpOptions);
   }
 
-  register(user): Observable<any> {
-    return this.http.post(AUTH_API + 'signup', {
-      firstName: user.firstName,
-      lastName: user.lastName,
-      username: user.username,
-      password: user.password,
-      numTel : user.numTel,
-      region : user.region,
-      destination : user.destination,
-      facebook : user.facebook
-      
-    }, httpOptions);
+  register(user: any): Observable<any> {
+    return this.http.post(AUTH_API + 'signup', user);
   }
 }

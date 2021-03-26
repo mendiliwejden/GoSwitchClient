@@ -1,381 +1,392 @@
-
 <div id="sinscrire">
-	<img id="ID683501db752baa384a455ffff613" src="assets/img/home/ID683501db752baa384a455ffff613.png" srcset="assets/img/home/ID683501db752baa384a455ffff613.png 1x">
-		
-	<div id="Groupe_dfilant_10">
-		<div id="Groupe_188">
-			<div id="Groupe_165">
-				<div id="Sinscrire_ce">
-					<span>S'inscrire</span>
-				</div>
-			</div>
-		</div>
-		<div id="Groupe_212">
-		<form *ngIf="!isSuccessful"
-		name="form"
-		(ngSubmit)="f.form.valid && onSubmit()"
-		#f="ngForm"
-		novalidate>
-			<div id="Groupe_206">
-				<svg class="Rectangle_66">
-					<rect id="Rectangle_66" rx="76" ry="76" x="0" y="0" width="1061" height="1882">
-					</rect>
-				</svg>
-				<!-- Prenom -->
-				<div id="Groupe_67">
-					<div id="Groupe_66">
-						
-						<div id="Groupe_55">
-							<div id="Prnom">
-								<label for="prenom" class="label">Prenom</label><span style="color:rgba(114,114,114,1);">*</span>
-							</div>
-							<div >
-								<input  type="text"
-          class="form-control"
-          name="firstName"
-          [(ngModel)]="form.firstName"
-          required
-		  [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }"
-		  class="Rectangle_26"
-          #firstName="ngModel">
-		  <div class="invalid-feedback-Prenom" *ngIf="f.submitted && firstName.invalid">
-			<div *ngIf="firstName.errors.required">Prénom obligatoire</div>
-			
-		  </div>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-				<!-- Num tel -->
-				<div id="Groupe_207">
-					<div id="Groupe_57">
-						<div id="Numro_de_tlphone_1">
-							<label for="numeroDeTelephone" class="label">Numero de telephone</label><span style="color:rgba(114,114,114,1);">**</span>
-            				
-						</div>
-						<div >
-							<input
-							class="form-control"
-							name="NumTel"
-							[(ngModel)]="form.numTel"
-							required
-							[ngClass]="{ 'is-invalid': f.submitted && numTel.invalid }"
-							class="Rectangle_26"
-							#numTel="ngModel">
-							<div class="invalid-feedback-Prenom"*ngIf="f.submitted && numTel.invalid">
-							  <div  *ngIf="numTel.errors.required">Numéro de téléphone obligatoire</div>
-							  
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Nom -->
-				<div id="Groupe_117">
-					<div id="Groupe_68">
-						<div id="Groupe_54">
-							<div id="Nom">
-							    <label for="nom" class="label">Nom</label><span style="color:rgba(114,114,114,1);">*</span>
-							</div>
-							<div >
-								<input  class="form-control"
-								name="lastName"
-								[(ngModel)]="form.lastName"
-								required
-								[ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }"
-								class="Rectangle_26"
-								#lastName="ngModel">
-								<div class="invalid-feedback" *ngIf="f.submitted && lastName.invalid">
-								  <div *ngIf="lastName.errors.required">Nom obligatoire</div>
-								  
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Button inscription -->
-				<div id="Groupe_112">
-					<div >
-						<button id="Rectangle_60">
-						S'inscrire
-						</button>
-					</div>
-				</div>
-			</div>
-			<!-- Tel 2 -->
-			<div id="Groupe_64">
-				<div id="Groupe_57_c">
-					<div id="Numro_de_tlphone_2">
-						<label for="numeroDeTelephone2" class="label">Numero de telephone (2)</label>
-						
-					</div>
-					<div >
-						<input id="numeroDeTelephone2" type="tel" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" class="Rectangle_26" >
-					</div>
-				</div>
-			</div>
-			<!-- Disponibilité -->
-			<div id="Groupe_63">
-				<div id="Groupe_58">
-					<div id="Numro_de_tlphone_2">
-						<label for="numeroDeTelephone2" class="label">Disponibilité</label>	
-					</div>
-				</div>
-			</div>
-			<!-- Facebook -->
-			<div id="Groupe_61">
-				<div id="Groupe_60">
-					<div id="Facebook">
-						<label for="Facebook" class="label">Facebook</label>
-						
-					</div>
-					<div >
-						<input id="facebook" name="facebook"type="text" class="Rectangle_26" [(ngModel)]="form.facebook"
-						
-						#facebook="ngModel">
-					</div>
-				</div>
-			</div>
-			<!-- Région -->
-			<div id="Groupe_213">
-				<div id="Groupe_62">
-					<div id="Groupe_59">
-						<div id="Rgion">
-							<label for="Région" class="label">Région</label><span style="color:rgba(114,114,114,1);">*</span>
-						
-					</div>
-					<div >
-						<select  [ngClass]="{ 'is-invalid': f.submitted && region.errors}"
-						 id="région" type="text" name="region"class="Rectangle_26" [(ngModel)]="form.region"
-						 required
-						 
-						 #region="ngModel">
-							<option >Sélectionner votre région</option>
-							<option>Tunis</option>
-							<option>Bizerte</option>
-							<option>Monastir</option>
-							<option>Ariana</option>
-							<option>Ben Arous</option>
-							<option>Médenine</option>
-							<option>Béja</option>
-							<option>El Kef</option>
-							<option>Djandouba</option>
-							<option>Kébili</option>
-							<option>Sfax</option>
-							<option>La Manouba</option> 
-							<option>Nabeul</option>
-							<option>Zagouan</option>
-							<option>Tataouine</option>
-							<option>Kirouan</option>
-							<option>Sidi Bousid</option>
-							<option>Gafsa</option>
-							<option>Gabes</option> 
-							<option>Mednine</option>
-							<option>Kasserine</option>
-							<option>Touzeur</option>
-							<option>Sousse</option>
-							<option>Mahdia</option>
-						</select>
-						<div *ngIf="f.submitted && region.errors" >
-							<div class="invalid-region" *ngIf="region.errors.required">Region obligatoire</div>
-						</div>
-					</div>
-					</div>
-				</div>
-				<svg class="Polygone_2" viewBox="0 0 28 25">
-					<path id="Polygone_2" d="M 13.99999904632568 0 L 28 25 L 0 25 Z">
-					</path>
-				</svg>
-			</div>
+  <img id="ID683501db752baa384a455ffff613" src="assets/img/home/ID683501db752baa384a455ffff613.png"
+       srcset="assets/img/home/ID683501db752baa384a455ffff613.png 1x">
 
-			<!-- Start Clock design -->
-			<div id="Groupe_218">
-				<div id="Groupe_216">
-					
-					
-				</div>
-				<div id="h">
-					<input id="Rectangle_22_dn" type="time" rx="28.5" ry="28.5" x="0" y="0" width="86" height="57">
-				</div>
-			</div>
-			<div id="Groupe_219">
-				
-				<div id="min_du">
-					<span>A</span>
-				</div>
-			</div>
-			<div id="Groupe_220">
-				
-				<div id="h_dz">
-					<input id="Rectangle_22_dx" type ="time"rx="28.5" ry="28.5" x="0" y="0" width="86" height="57">
-				</div>
-			</div>
-			<!-- End Clock design -->
+  <div id="Groupe_dfilant_10">
+    <div id="Groupe_188">
+      <div id="Groupe_165">
+        <div id="Sinscrire_ce">
+          <span>S'inscrire</span>
+        </div>
+      </div>
+    </div>
+    <div id="Groupe_212">
+      <form *ngIf="!isSuccessful"
+            name="form"
+            (ngSubmit)="f.form.valid && onSubmit()"
+            #f="ngForm"
+            novalidate>
+        <div id="Groupe_206">
+          <svg class="Rectangle_66">
+            <rect id="Rectangle_66" rx="76" ry="76" x="0" y="0" width="1061" height="1882">
+            </rect>
+          </svg>
+          <!-- Prenom -->
+          <div id="Groupe_67">
+            <div id="Groupe_66">
 
-			<!-- Mot de passe -->
-			<div id="Groupe_221">
-				<div id="Groupe_60_d">
-					<div id="Mot_de_passe">
-						<label for="motDePasse"  class="label">Mot de passe</label><span style="color:rgba(114,114,114,1);">*</span>
-						
-					</div>
-					<div >
-						<input
-          type="password"
-          class="form-control"
-          name="password"
-		  [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
-          [(ngModel)]="form.password"
-          required
-          minlength="8"
-          #password="ngModel"
-		  class="Rectangle_26"
-        />
-        <div class=".invalid-pass"*ngIf="f.submitted && password.errors">
-          <div class="invalid-region" *ngIf="password.errors.required">Password is required</div>
-          <div class="invalid-region"*ngIf="password.errors.minlength">
-            Password must be at least 8 characters
+              <div id="Groupe_55">
+                <div id="Prnom">
+                  <label for="prenom" class="label">Prenom</label><span style="color:rgba(114,114,114,1);">*</span>
+                </div>
+                <div>
+                  <input type="text"
+                         class="form-control"
+                         name="firstName"
+                         [(ngModel)]="form.firstName"
+                         required
+                         [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }"
+                         class="Rectangle_26"
+                         #firstName="ngModel">
+                  <div class="invalid-feedback-Prenom" *ngIf="f.submitted && firstName.invalid">
+                    <div *ngIf="firstName.errors.required">Prénom obligatoire</div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Num tel -->
+          <div id="Groupe_207">
+            <div id="Groupe_57">
+              <div id="Numro_de_tlphone_1">
+                <label for="numeroDeTelephone" class="label">Numero de telephone</label><span
+                style="color:rgba(114,114,114,1);">**</span>
+
+              </div>
+              <div>
+                <input
+                  class="form-control"
+                  name="NumTel"
+                  [(ngModel)]="form.numTel"
+                  required
+                  [ngClass]="{ 'is-invalid': f.submitted && numTel.invalid }"
+                  class="Rectangle_26"
+                  #numTel="ngModel">
+                <div class="invalid-feedback-Prenom" *ngIf="f.submitted && numTel.invalid">
+                  <div *ngIf="numTel.errors.required">Numéro de téléphone obligatoire</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Nom -->
+          <div id="Groupe_117">
+            <div id="Groupe_68">
+              <div id="Groupe_54">
+                <div id="Nom">
+                  <label for="nom" class="label">Nom</label><span style="color:rgba(114,114,114,1);">*</span>
+                </div>
+                <div>
+                  <input class="form-control"
+                         name="lastName"
+                         [(ngModel)]="form.lastName"
+                         required
+                         [ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }"
+                         class="Rectangle_26"
+                         #lastName="ngModel">
+                  <div class="invalid-feedback" *ngIf="f.submitted && lastName.invalid">
+                    <div *ngIf="lastName.errors.required">Nom obligatoire</div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button inscription -->
+          <div id="Groupe_112">
+            <div>
+              <button id="Rectangle_60">
+                S'inscrire
+              </button>
+            </div>
           </div>
         </div>
-					</div>
-				</div>
-			</div>
-			<!-- Email -->
-			<div id="Groupe_222">
-				<div id="Groupe_60_ea">
-					<div id="E-mail">
-						<label for="email" class="label">Email</label><span style="color:rgba(114,114,114,1);">*</span>
-						
-					</div>
-					<div >
-						<input name="username" [(ngModel)]="form.username"class="form-control" [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
-						 id="Email" type="text" class="Rectangle_26" required email #username="ngModel"
-						  >
-						 <div *ngIf="f.submitted && username.errors" class="invalid-feedback">
-							<div *ngIf="username.errors.required">Email obligatoire</div>
-							<div *ngIf="username.errors.email">Email must be a valid email address</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Confirm Mot de passe -->
-			<div id="Groupe_223">
-				<div id="Groupe_60_eb">
-					<div id="Confirmer_mot_de_passe">
-						<label for="confirmerMotDePasse" class="label">Confirmer mot de passe</label><span style="color:rgba(114,114,114,1);">*</span>
-						
-					</div>
-					<div >
-						<input   class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
-						 id="confirmerMotDePasse" type="text" class="Rectangle_26" required>
-						 <div *ngIf="submitted && f.confirmPassword.errors" >
-							<div class="invalid-confirm" *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
-							<div class="must-match" *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Destination -->
-			<div id="Groupe_224">
-				<div id="Groupe_60_ef">
-					<div id="Destination_prfre">
-						<label for="destination" class="label">Destination préférée</label><span style="color:rgba(114,114,114,1);">*</span>
-						
-					</div>
-					<div >
-						<select  [ngClass]="{ 'is-invalid': f.submitted && destination.errors }"
-						name="destination" id="destination" type="text" [(ngModel)]="form.destination"
-						 required
-						 class="Rectangle_26"
-						 #destination="ngModel">
-							<option>Choisir Destination</option>
-							<option>Tunis</option>
-							<option>Bizerte</option>
-							<option>Monastir</option>
-							<option>Ariana</option>
-							<option>Ben Arous</option>
-							<option>Médenine</option>
-							<option>Béja</option>
-							<option>El Kef</option>
-							<option>Djandouba</option>
-							<option>Kébili</option>
-							<option>Sfax</option>
-							<option>La Manouba</option> 
-							<option>Nabeul</option>
-							<option>Zagouan</option>
-							<option>Tataouine</option>
-							<option>Kirouan</option>
-							<option>Sidi Bousid</option>
-							<option>Gafsa</option>
-							<option>Gabes</option> 
-							<option>Mednine</option>
-							<option>Kasserine</option>
-							<option>Touzeur</option>
-							<option>Sousse</option>
-							<option>Mahdia</option>
-						</select>
-						<div *ngIf="f.submitted && destination.errors" >
-							<div class="invalid-Destination" *ngIf="destination.errors.required">Destination is required</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<svg class="Polygone_3" viewBox="0 0 28 25">
-				<path id="Polygone_3" d="M 13.99999904632568 0 L 28 25 L 0 25 Z">
-				</path>
-			</svg>
-			<!-- Cin -->
-			<div id="Groupe_232">
-				<div id="Groupe_231">
-					<div id="Groupe_225">
-						<div id="Groupe_60_em">
-							<div id="CIN_scanne">
-								<span>CIN scannée</span><span style="color:rgba(114,114,114,1);">*</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="Rectangle_24_eo">
-					<div id="Importer">
-						<input [ngClass]="{ 'is-invalid': submitted && f.cin.errors }"
-						 type = "file" required>
-						 <div *ngIf="submitted && f.cin.errors" class="invalid_file">
-							<div *ngIf="f.cin.errors.required">Cin is required</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<!-- Definition des champs obligatoire -->
-			<div id="_champ_obligatoire__pour_appel">
-				<span>* champ obligatoire<br/>** pour appel téléphonique<br/>*** pour vérifier la propriété du logement</span>
-			</div>
+        <!-- Tel 2 -->
+        <div id="Groupe_64">
+          <div id="Groupe_57_c">
+            <div id="Numro_de_tlphone_2">
+              <label for="numeroDeTelephone2" class="label">Numero de telephone (2)</label>
 
-			<!-- Facture -->
-			<div id="Groupe_233">
-				<div id="Facture_STEG_ou__SONEDE_scanne">
-					<span>Facture STEG ou <br/>SONEDE scannée</span><span style="color:rgba(114,114,114,1);">***</span>
-				</div>
-				<div id="Groupe_229">
-					<div class="Rectangle_24_ew">
-						<div id="Importer">
-							<input [ngClass]="{ 'is-invalid': submitted && f.steg.errors }"
-							 type = "file" required>
-							 <div *ngIf="submitted && f.steg.errors" class="invalid_file">
-								<div *ngIf="f.steg.errors.required">Steg is required</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
-				Signup failed!<br />{{ errorMessage }}
-			  </div>
-		</form>
-		<div class="alert alert-success" *ngIf="isSuccessful">
-			Your registration is successful!
-		  </div>
-		</div>
-	</div>
-<app-header></app-header>
+            </div>
+            <div>
+              <input id="numeroDeTelephone2" type="tel" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" class="Rectangle_26">
+            </div>
+          </div>
+        </div>
+        <!-- Disponibilité -->
+        <div id="Groupe_63">
+          <div id="Groupe_58">
+            <div id="Numro_de_tlphone_2">
+              <label for="numeroDeTelephone2" class="label">Disponibilité</label>
+            </div>
+          </div>
+        </div>
+        <!-- Facebook -->
+        <div id="Groupe_61">
+          <div id="Groupe_60">
+            <div id="Facebook">
+              <label for="Facebook" class="label">Facebook</label>
+
+            </div>
+            <div>
+              <input id="facebook" name="facebook" type="text" class="Rectangle_26" [(ngModel)]="form.facebook"
+
+                     #facebook="ngModel">
+            </div>
+          </div>
+        </div>
+        <!-- Région -->
+        <div id="Groupe_213">
+          <div id="Groupe_62">
+            <div id="Groupe_59">
+              <div id="Rgion">
+                <label for="Région" class="label">Région</label><span style="color:rgba(114,114,114,1);">*</span>
+
+              </div>
+              <div>
+                <select [ngClass]="{ 'is-invalid': f.submitted && region.errors}"
+                        id="région" type="text" name="region" class="Rectangle_26" [(ngModel)]="form.region"
+                        required
+
+                        #region="ngModel">
+                  <option>Sélectionner votre région</option>
+                  <option>Tunis</option>
+                  <option>Bizerte</option>
+                  <option>Monastir</option>
+                  <option>Ariana</option>
+                  <option>Ben Arous</option>
+                  <option>Médenine</option>
+                  <option>Béja</option>
+                  <option>El Kef</option>
+                  <option>Djandouba</option>
+                  <option>Kébili</option>
+                  <option>Sfax</option>
+                  <option>La Manouba</option>
+                  <option>Nabeul</option>
+                  <option>Zagouan</option>
+                  <option>Tataouine</option>
+                  <option>Kirouan</option>
+                  <option>Sidi Bousid</option>
+                  <option>Gafsa</option>
+                  <option>Gabes</option>
+                  <option>Mednine</option>
+                  <option>Kasserine</option>
+                  <option>Touzeur</option>
+                  <option>Sousse</option>
+                  <option>Mahdia</option>
+                </select>
+                <div *ngIf="f.submitted && region.errors">
+                  <div class="invalid-region" *ngIf="region.errors.required">Region obligatoire</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <svg class="Polygone_2" viewBox="0 0 28 25">
+            <path id="Polygone_2" d="M 13.99999904632568 0 L 28 25 L 0 25 Z">
+            </path>
+          </svg>
+        </div>
+
+        <!-- Start Clock design -->
+        <div id="Groupe_218">
+          <div id="Groupe_216">
+
+
+          </div>
+          <div id="h">
+            <input id="Rectangle_22_dn" type="time" rx="28.5" ry="28.5" x="0" y="0" width="86" height="57">
+          </div>
+        </div>
+        <div id="Groupe_219">
+
+          <div id="min_du">
+            <span>A</span>
+          </div>
+        </div>
+        <div id="Groupe_220">
+
+          <div id="h_dz">
+            <input id="Rectangle_22_dx" type="time" rx="28.5" ry="28.5" x="0" y="0" width="86" height="57">
+          </div>
+        </div>
+        <!-- End Clock design -->
+
+        <!-- Mot de passe -->
+        <div id="Groupe_221">
+          <div id="Groupe_60_d">
+            <div id="Mot_de_passe">
+              <label for="password" class="label">Mot de passe</label><span style="color:rgba(114,114,114,1);">*</span>
+
+            </div>
+            <div>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+                [(ngModel)]="form.password"
+                required
+                minlength="8"
+                #password="ngModel"
+                class="Rectangle_26"
+              />
+              <div class=".invalid-pass" *ngIf="f.submitted && password.errors">
+                <div class="invalid-region" *ngIf="password.errors.required">Password is required</div>
+                <div class="invalid-region" *ngIf="password.errors.minlength">
+                  Password must be at least 8 characters
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Email -->
+        <div id="Groupe_222">
+          <div id="Groupe_60_ea">
+            <div id="E-mail">
+              <label for="email" class="label">Email</label><span style="color:rgba(114,114,114,1);">*</span>
+
+            </div>
+            <div>
+              <input name="username" [(ngModel)]="form.username" class="form-control"
+                     [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+                     id="Email" type="text" class="Rectangle_26" required email #username="ngModel"
+              >
+              <div *ngIf="f.submitted && username.errors" class="invalid-feedback">
+                <div *ngIf="username.errors.required">Email obligatoire</div>
+                <div *ngIf="username.errors.email">Email must be a valid email address</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Confirm Mot de passe -->
+        <div id="Groupe_223">
+          <div id="Groupe_60_eb">
+            <div id="Confirmer_mot_de_passe">
+              <label for="confirmerMotDePasse" class="label">Confirmer mot de passe</label><span
+              style="color:rgba(114,114,114,1);">*</span>
+
+            </div>
+            <div>
+              <input class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
+                     id="confirmerMotDePasse" type="password" class="Rectangle_26" required>
+              <div *ngIf="submitted && f.confirmPassword.errors">
+                <div class="invalid-confirm" *ngIf="f.confirmPassword.errors.required">Confirm Password is required
+                </div>
+                <div class="must-match" *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Destination -->
+        <div id="Groupe_224">
+          <div id="Groupe_60_ef">
+            <div id="Destination_prfre">
+              <label for="destination" class="label">Destination préférée</label><span
+              style="color:rgba(114,114,114,1);">*</span>
+
+            </div>
+            <div>
+              <select [ngClass]="{ 'is-invalid': f.submitted && destination.errors }"
+                      name="destination" id="destination" type="text" [(ngModel)]="form.destination"
+                      required
+                      class="Rectangle_26"
+                      #destination="ngModel">
+                <option>Choisir Destination</option>
+                <option>Tunis</option>
+                <option>Bizerte</option>
+                <option>Monastir</option>
+                <option>Ariana</option>
+                <option>Ben Arous</option>
+                <option>Médenine</option>
+                <option>Béja</option>
+                <option>El Kef</option>
+                <option>Djandouba</option>
+                <option>Kébili</option>
+                <option>Sfax</option>
+                <option>La Manouba</option>
+                <option>Nabeul</option>
+                <option>Zagouan</option>
+                <option>Tataouine</option>
+                <option>Kirouan</option>
+                <option>Sidi Bousid</option>
+                <option>Gafsa</option>
+                <option>Gabes</option>
+                <option>Mednine</option>
+                <option>Kasserine</option>
+                <option>Touzeur</option>
+                <option>Sousse</option>
+                <option>Mahdia</option>
+              </select>
+              <div *ngIf="f.submitted && destination.errors">
+                <div class="invalid-Destination" *ngIf="destination.errors.required">Destination is required</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="Polygone_3" viewBox="0 0 28 25">
+          <path id="Polygone_3" d="M 13.99999904632568 0 L 28 25 L 0 25 Z">
+          </path>
+        </svg>
+        <!-- Cin -->
+        <div id="Groupe_232">
+          <div id="Groupe_231">
+            <div id="Groupe_225">
+              <div id="Groupe_60_em">
+                <div id="CIN_scanne">
+                  <span>CIN scannée</span><span style="color:rgba(114,114,114,1);">*</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Rectangle_24_eo">
+            <div id="Importer">
+              <input id="cinUpload" type="file" [(ngModel)]="fakeCin"
+                     (change)="onSelectCIN($event)"
+                     #cinUpload="ngModel" id="cinUpload" name="cinUpload"
+                     [ngClass]="{ 'is-invalid': submitted && cinUpload.invalid }"
+                     required>
+              <div *ngIf="submitted && cinUpload.errors" class="invalid_file">
+                <div>Cin is required</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Definition des champs obligatoire -->
+        <div id="_champ_obligatoire__pour_appel">
+          <span>* champ obligatoire<br/>** pour appel téléphonique<br/>*** pour vérifier la propriété du logement</span>
+        </div>
+
+        <!-- Facture -->
+        <div id="Groupe_233">
+          <div id="Facture_STEG_ou__SONEDE_scanne">
+            <span>Facture STEG ou <br/>SONEDE scannée</span><span style="color:rgba(114,114,114,1);">***</span>
+          </div>
+          <div id="Groupe_229">
+            <div class="Rectangle_24_ew">
+              <div id="Importer">
+                <input id="stagUpload" type="file" [(ngModel)]="fakeSteg"
+                       (change)="onSelectSteg($event)"
+                       #stagUpload="ngModel" id="stagUpload" name="stagUpload"
+                       [ngClass]="{ 'is-invalid': submitted && stagUpload.invalid }"
+                       required>
+                <div *ngIf="submitted && stagUpload.errors" class="invalid_file">
+                  <div>Steg is required</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+          Signup failed!<br/>{{ errorMessage }}
+        </div>
+      </form>
+      <div class="alert alert-success" *ngIf="isSuccessful">
+        Your registration is successful!
+      </div>
+    </div>
+  </div>
+  <app-header></app-header>
 </div>

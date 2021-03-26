@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {TooltipPosition} from '@angular/material/tooltip';
+import {FormControl} from '@angular/forms';
+import {TokenStorageService} from '../../services/token-storage.service';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private tokenStorage: TokenStorageService) { }
 
   ngOnInit() {
   }

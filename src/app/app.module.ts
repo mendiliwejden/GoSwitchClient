@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -53,6 +53,12 @@ import { ValidateEchangeComponent } from './admin/validate-echange/validate-echa
 import { ValidateHomeComponent } from './admin/validate-home/validate-home.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { ProfileComponent } from './shared/profile/profile/profile.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import {ToastrModule} from 'ngx-toastr';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatMenuModule} from "@angular/material/menu";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
@@ -102,7 +108,7 @@ import { ProfileComponent } from './shared/profile/profile/profile.component';
     ValidateEchangeComponent,
     ValidateHomeComponent,
     ProfileComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -110,7 +116,13 @@ import { ProfileComponent } from './shared/profile/profile/profile.component';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    ToastrModule.forRoot(),
+    MatToolbarModule,
+    MatMenuModule,
+    MatTooltipModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

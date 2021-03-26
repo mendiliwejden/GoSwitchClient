@@ -1,17 +1,17 @@
 
 <div id="maison_choisi">
-	<img id="ID683501db752baa384a455ffff613" src="assets/img/home/ID683501db752baa384a455ffff613.png" 
+	<img id="ID683501db752baa384a455ffff613" src="assets/img/home/ID683501db752baa384a455ffff613.png"
     srcset="assets/img/home/ID683501db752baa384a455ffff613.png 1x">
 
         <app-header></app-header>
 
-	<div id="Maison_Ben_foulen__Nabeul">
-		<span>Maison Ben foulen à Nabeul</span>
+	<div id="Maison_Ben_foulen__Nabeul" *ngIf="dataLogged">
+		<span>Maison {{user.firstName}} {{user.lastName}} à {{user.region}}</span>
 	</div>
 
 	<div id="Groupe_543">
 		<div id="Groupe_542">
-			<div id="Groupe_193">
+			<div *ngIf="dataLogged && home.wifi" id="Groupe_193">
 				<div id="wifi-24px">
 					<svg class="Trac_16" viewBox="0 0 71.02 63.981">
 						<path id="Trac_16" d="M 0 0 L 71.02002716064453 0 L 71.02002716064453 63.98132705688477 L 0 63.98132705688477 L 0 0 Z">
@@ -26,7 +26,7 @@
 					<span>Wi-fi</span>
 				</div>
 			</div>
-			<div id="Groupe_194">
+			<div *ngIf="dataLogged && home.tv" id="Groupe_194">
 				<div id="tv-24px">
 					<svg class="Trac_12" viewBox="0 0 76.147 68.6">
 						<path id="Trac_12" d="M 0 0 L 76.14693450927734 0 L 76.14693450927734 68.60011291503906 L 0 68.60011291503906 L 0 0 Z">
@@ -41,7 +41,7 @@
 					<span>TV</span>
 				</div>
 			</div>
-			<div id="Groupe_195">
+			<div *ngIf="dataLogged && home.microondes" id="Groupe_195">
 				<div id="microwave-24px">
 					<svg class="Rectangle_16">
 						<rect id="Rectangle_16" rx="0" ry="0" x="0" y="0" width="84" height="76">
@@ -56,7 +56,7 @@
 					<span>Micro-ondes</span>
 				</div>
 			</div>
-			<div id="Groupe_196">
+			<div *ngIf="dataLogged && home.refrigrrateur" id="Groupe_196">
 				<div id="kitchen-24px">
 					<svg class="Trac_45" viewBox="0 0 58.291 73.992">
 						<path id="Trac_45" d="M 0 0 L 58.29052352905273 0 L 58.29052352905273 73.9921875 L 0 73.9921875 L 0 0 Z">
@@ -71,7 +71,7 @@
 					<span>Réfrigérateur</span>
 				</div>
 			</div>
-			<div id="Groupe_357">
+			<div *ngIf="dataLogged && home.equipepourenfants" id="Groupe_357">
 				<div id="Equip_pour__enfants">
 					<span>Equipé pour <br/>enfants</span>
 				</div>
@@ -103,16 +103,16 @@
 	<div id="Consulter">
 		<span>Consulter</span>
 	</div>
-	
-    <img id="ID148879770_494010321588391_22" 
-    src="assets/img/homeDetail/ID148879770_494010321588391_22.png" 
+
+    <img id="ID148879770_494010321588391_22"
+    src="assets/img/homeDetail/ID148879770_494010321588391_22.png"
     srcset="assets/img/homeDetail/ID148879770_494010321588391_22.png 1x">
-		
-	
+
+
 
     <!-- Envoyer une demande d'échange -->
         <div  id="Groupe_545">
-            
+
             <div id="Groupe_234">
                 <svg class="Rectangle_60">
                     <rect id="Rectangle_60" rx="36" ry="36" x="0" y="0" width="651" height="72">
@@ -120,9 +120,9 @@
                 </svg>
             </div>
                 <!-- Start Lien -->
-                <a routerLink="/echange">
+                <a [routerLink]="['/echange', home?.id]">
                     <div id="Groupe_544">
-                        
+
                         <div id="Envoyer_une_demande_dchange">
                             <span>Envoyer une demande d'échange</span>
                         </div>
@@ -143,12 +143,12 @@
     <!-- end Envoyer une demande d'échange -->
 
     <!-- Detail Maison Start -->
-	<div id="Groupe_546">
+	<div *ngIf="dataLogged" id="Groupe_546">
 		<div id="___-_Villa__2_tages_____-_2_ch">
-			<span>   - Villa à 2 étages</span> <br/> 
-            <span>  - 2 chambres </span><br/> 
-            <span>- 1 salle de bain </span><br/>  
-            <span>- 1 terrasse</span>
+			<span>   - {{home.logement}} à {{home.etages}} étages</span> <br/>
+            <span>  - {{home.chambres}} chambres </span><br/>
+            <span>- {{home.bains}} salle de bain </span><br/>
+            <span>- {{home.terrasses}} terrasse</span>
 		</div>
 		<div id="Proprits">
 			<span>Propriétés</span>

@@ -41,175 +41,214 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { ValidateHomeComponent } from './admin/validate-home/validate-home.component';
 import { ValidateEchangeComponent } from './admin/validate-echange/validate-echange.component';
 import { ListClientComponent } from './admin/list-client/list-client.component';
+import {AuthGuard} from './services/auth-guard';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: HomeComponent
   },
   {
-    path: "login",
+    path: 'login',
     component: LoginComponent,
   },
   {
-    path: "register",
+    path: 'register',
     component: RegisterComponent,
   },
   {
-    path: "myHome",
+    path: 'myHome',
     component: MyHomeComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "destination",
-    component: DestinationComponent,  
+    path: 'destination',
+    component: DestinationComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'tunis',
-    component: TunisComponent
+    component: TunisComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'sousse',
-    component:  SousseComponent
+    component:  SousseComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'ariana',
-    component:  ArianaComponent
+    component:  ArianaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'beja',
-    component:  BejaComponent
+    component:  BejaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'benArous',
-    component:  BenArousComponent
+    component:  BenArousComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'bizerte',
-    component:  BizerteComponent
+    component:  BizerteComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'gabes',
-    component:  GabesComponent
+    component:  GabesComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'gafsa',
-    component:  GafsaComponent
+    component:  GafsaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'jendouba',
-    component:  JendoubaComponent
+    component:  JendoubaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'kasserine',
-    component:  KasserineComponent
+    component:  KasserineComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'kairouan',
-    component:  KairouanComponent
+    component:  KairouanComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'kebili',
-    component:  KebiliComponent
+    component:  KebiliComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'kef',
-    component:  KefComponent
+    component:  KefComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'mahdia',
-    component:  MahdiaComponent
+    component:  MahdiaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'manouba',
-    component:  ManoubaComponent
+    component:  ManoubaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'medenine',
-    component:  MedenineComponent
+    component:  MedenineComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'monastir',
-    component:  MonastirComponent
+    component:  MonastirComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'nabeul',
-    component:  NabeulComponent
+    component:  NabeulComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'sfax',
-    component:  SfaxComponent
+    component:  SfaxComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'sidiBouzid',
-    component:  SidiBouzidComponent
+    component:  SidiBouzidComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'siliana',
-    component:  SilianaComponent
+    component:  SilianaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'tataouine',
-    component:  TataouineComponent
+    component:  TataouineComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'tozeur',
-    component:  TozeurComponent
+    component:  TozeurComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:  'zaghouan',
-    component:  ZaghouanComponent
+    component:  ZaghouanComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "editPassword",
+    path: 'editPassword',
     component: EditPasswordComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "editProfile",
+    path: 'editProfile',
     component: EditProfileComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "contact",
+    path: 'contact',
     component: ContactComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "echange",
+    path: 'echange/:homeId',
     component: DemandeEchangeComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "maisonDispo",
+    path: 'maisonDispo/:region',
     component: HomeAvailableComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "homeDteail",
+    path: 'homeDteail',
     component: HomeDetailsComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "dashboard",
+    path: 'dashboard',
     component: DashboardComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "dashboard/validateHome",
+    path: 'dashboard/validateHome',
     component: ValidateHomeComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "dashboard/validateEchange",
+    path: 'dashboard/validateEchange',
     component: ValidateEchangeComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: "dashboard/listClient",
+    path: 'dashboard/listClient',
     component: ListClientComponent,
+    canActivate: [AuthGuard]
   },
-  
+
   {
-    path: "**",
+    path: '**',
     component: ErrorComponent,
+    canActivate: [AuthGuard]
   },
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthGuard]
 })
 export class AppRoutingModule { }
