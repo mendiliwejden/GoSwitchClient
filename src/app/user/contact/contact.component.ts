@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ContactService} from '../../services/contact.service';
+import {Message} from '../../models/Message';
 
 @Component({
   selector: 'app-contact',
@@ -8,12 +10,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  emailstring= "mailto:mendili.wejden@gmail.com?Subject=Hello&body=links:  %0D http://link1.com  %0D http://link1.com";
 
   registerForm: FormGroup;
   submitted = false;
+  form = new Message();
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,
+              private contactService: ContactService) {
+  }
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
@@ -22,21 +26,16 @@ export class ContactComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       sujet: ['', Validators.required],
       message: ['', Validators.required]
-  });
+    });
   }
 
-    // convenience getter for easy access to form fields
-    get f() 
-    { return this.registerForm.controls; }
-  
-    onSubmit() {
-      this.submitted = true;
-      // stop here if form is invalid
-      if (this.registerForm.invalid) {
-          return;
-      }
-      // display form values on success
-      alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
-    }
+  // convenience getter for easy access to form fields
+  get f() {
+    return this.registerForm.controls;
+  }
+
+  onSubmit() {
+
+  }
 
 }

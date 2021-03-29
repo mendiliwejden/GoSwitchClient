@@ -327,7 +327,7 @@
               <input id="fileUpload" type="file" [(ngModel)]="photo"
                      (change)="onSelectFile($event)"
                      #fileUpload="ngModel" id="fileUpload" name="fileUpload" accept="image/*"
-                     [ngClass]="{ 'is-invalid': f.submitted && fileUpload.invalid }" required>
+                     [ngClass]="{ 'is-invalid': f.submitted && fileUpload.invalid }" multiple required>
               <div *ngIf="f.submitted && fileUpload.invalid" class="invalid-feedback-photo">
                 <div *ngIf="fileUpload.errors.required">photo is required</div>
               </div>

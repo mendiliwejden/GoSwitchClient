@@ -1,10 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {HomeService} from '../../services/home.service';
 import {Home} from '../../models/Home';
-import {UserService} from '../../services/user.service';
 import {ActivatedRoute} from '@angular/router';
-import {TooltipPosition} from '@angular/material/tooltip';
-import {FormControl} from '@angular/forms';
+import {FileService} from '../../services/file.service';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home-available',
@@ -13,14 +12,17 @@ import {FormControl} from '@angular/forms';
 })
 export class HomeAvailableComponent implements OnInit {
   homeList: Home[];
+  imageHomeList: any[];
   dataLogged = false;
   homeSelected: Home;
   homeSelctedId: number;
 
 
-
   constructor(private homeService: HomeService,
-              private activatedRoute: ActivatedRoute) {
+              private activatedRoute: ActivatedRoute,
+              private fileService: FileService,
+              private domSanitizer: DomSanitizer,
+              private cdRef: ChangeDetectorRef) {
   }
 
   ngOnInit() {
@@ -37,10 +39,8 @@ export class HomeAvailableComponent implements OnInit {
     this.homeService.getHomeListByRegion(region).subscribe(
       data => {
         this.homeList = data;
-        this.homeSelected = this.homeList[0];
-        this.homeSelctedId = this.homeSelected.id;
+        this.selectHome(this.homeList[0]);
         this.dataLogged = true;
-        console.log(this.homeList);
       }
     );
   }
@@ -48,5 +48,8 @@ export class HomeAvailableComponent implements OnInit {
   public selectHome(home: Home): void {
     this.homeSelected = home;
     this.homeSelctedId = this.homeSelected.id;
+    this.imageHomeList = home.photos;
+
   }
+
 }

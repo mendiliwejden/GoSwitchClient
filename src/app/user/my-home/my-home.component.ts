@@ -3,6 +3,8 @@ import {FormBuilder} from '@angular/forms';
 import {HomeService} from '../../services/home.service';
 import {Router} from '@angular/router';
 import {Home} from '../../models/Home';
+import {FileService} from '../../services/file.service';
+import {HttpEventType, HttpResponse} from '@angular/common/http';
 
 
 @Component({
@@ -12,13 +14,18 @@ import {Home} from '../../models/Home';
 })
 export class MyHomeComponent implements OnInit {
 
-  userFile;
+
+  fileInfos: any;
+
+  userFiles;
   public imagePath;
   photo: any;
-  public message: string;
+  selectedFiles: FileList;
+  progressInfos = [];
+  message = '';
 
 
-  constructor(private formBuilder: FormBuilder, private homeService: HomeService, private route: Router) {
+  constructor(private formBuilder: FormBuilder, private homeService: HomeService, private route: Router, private fileService: FileService) {
   }
 
   submitted = false;
@@ -31,12 +38,13 @@ export class MyHomeComponent implements OnInit {
   onSubmit() {
     console.log('submit data....');
     const formData = new FormData();
-    const user = this.model;
-    formData.append('home', JSON.stringify(user));
-    formData.append('file', this.userFile);
+    const home = this.model;
+    formData.append('home', JSON.stringify(home));
+    // formData.append('files', this.userFiles);
     console.log(formData);
     this.homeService.addHome(formData).subscribe(
       data => {
+        this.uploadFiles(data.id);
         console.log(data);
         alert('home registered successfully');
         this.route.navigate(['']);
@@ -65,17 +73,36 @@ export class MyHomeComponent implements OnInit {
 
   onSelectFile(event) {
     if (event.target.files.length > 0) {
-      const file = event.target.files[0];
-      this.userFile = file;
-      // this.f['profile'].setValue(file);
-
-      const mimeType = event.target.files[0].type;
-      if (mimeType.match(/image\/*/) == null) {
-        console.log('Only images are supported.');
-        return;
-      }
-
-
+      this.progressInfos = [];
+      this.selectedFiles = event.target.files;
+      console.log(this.selectedFiles);
     }
   }
+
+  uploadFiles(homeId: number) {
+    this.message = '';
+
+    for (let i = 0; i < this.selectedFiles.length; i++) {
+      this.upload(i, homeId, this.selectedFiles[i]);
+    }
+  }
+
+  upload(idx, homeId, file) {
+    this.progressInfos[idx] = {value: 0, fileName: file.name};
+
+    this.fileService.upload(homeId, file).subscribe(
+      event => {
+        if (event.type === HttpEventType.UploadProgress) {
+          this.progressInfos[idx].value = Math.round(100 * event.loaded / event.total);
+        } else if (event instanceof HttpResponse) {
+          // this.fileInfos = this.fileService.getFiles();
+        }
+      },
+      err => {
+        this.progressInfos[idx].value = 0;
+        this.message = 'Could not upload the file:' + file.name;
+      });
+  }
 }
+
+

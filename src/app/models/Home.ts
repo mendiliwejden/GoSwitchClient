@@ -31,5 +31,5 @@ export class Home {
   bicyclette: boolean;
   parking: boolean;
   fumeurs: boolean;
-  file = File;
+  photos = [];
 }

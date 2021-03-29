@@ -56,9 +56,11 @@ import { ProfileComponent } from './shared/profile/profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {ToastrModule} from 'ngx-toastr';
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatMenuModule} from "@angular/material/menu";
-import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import {CarouselModule} from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -122,7 +124,10 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     ToastrModule.forRoot(),
     MatToolbarModule,
     MatMenuModule,
-    MatTooltipModule
+    MatTooltipModule,
+    [IvyCarouselModule],
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
