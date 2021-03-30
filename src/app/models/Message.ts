@@ -3,7 +3,7 @@ export class Message {
   }
 
   nom: string;
-  phoneNumber: string;
+  numTel: string;
   email: string;
   sujet: string;
   message: string;

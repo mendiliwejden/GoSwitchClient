@@ -160,9 +160,7 @@
   <!-- End footer -->
 
   <!-- start forms -->
-  <form
-    name="form"
-    (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" [formGroup]="registerForm">
+  <form (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
 
     <div id="Groupe_613">
       <div id="Groupe_206">
@@ -179,12 +177,10 @@
             <span>Numéro de téléphone</span><span style="color:rgba(114,114,114,1);"> *</span>
           </div>
           <div>
-            <input formControlName="NumTel" [ngClass]="{ 'is-invalid': submitted && f.NumTel.errors }"
-                   [ngModel]="form.phoneNumber"
-                   id="numeroDeTelephone" type="text" class="Rectangle_26" required>
-            <div *ngIf="submitted && f.NumTel.errors">
-              <div class="invalid-feedback_Num_tel" *ngIf="f.NumTel.errors.required">Numero is required</div>
-              <div class="invalid" *ngIf="f.NumTel.errors.minlength">Numero must be at least 8 characters</div>
+            <input [ngClass]="{ 'is-invalid': submitted && numTel.errors }"
+                #numTel="ngModel" name="numTel"  id="numeroDeTelephone" type="text" class="Rectangle_26" required [(ngModel)]="form.numTel">
+            <div *ngIf="submitted && numTel.errors">
+              <div class="invalid-feedback_Num_tel" *ngIf="numTel.errors.required">Numero is required</div>
             </div>
           </div>
         </div>
@@ -194,10 +190,10 @@
             <span>Nom</span><span style="color:rgba(114,114,114,1);">*</span>
           </div>
           <div>
-            <input formControlName="nom" [ngClass]="{ 'is-invalid': submitted && f.nom.errors }" [ngModel]="form.nom"
-                   id="nom" type="text" class="Rectangle_26" required>
-            <div *ngIf="submitted && f.nom.errors" class="invalid-feedback">
-              <div *ngIf="f.nom.errors.required"> Nom is required</div>
+            <input #nom="ngModel" [ngClass]="{ 'is-invalid': submitted && nom.errors }"
+                   id="name" name="nom" type="text" class="Rectangle_26" required [(ngModel)]="form.nom">
+            <div *ngIf="submitted && nom.errors" class="invalid-feedback">
+              <div *ngIf="nom.errors.required"> Nom is required</div>
             </div>
           </div>
         </div>
@@ -207,12 +203,11 @@
             <span>E-mail</span><span style="color:rgba(114,114,114,1);">*</span>
           </div>
           <div>
-            <input formControlName="email" class="form-control" [ngModel]="form.email"
-                   [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
-                   id="Email" type="text" class="Rectangle_26" required>
-            <div *ngIf="submitted && f.email.errors">
-              <div class="invalid-feedback" *ngIf="f.email.errors.required">Email is required</div>
-              <div class="invalid-type" *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            <input #email="ngModel" class="form-control" name="email"
+                   [ngClass]="{ 'is-invalid': submitted && email.errors }"
+                   id="Email" type="text" class="Rectangle_26" [(ngModel)]="form.email" required>
+            <div *ngIf="submitted && email.errors">
+              <div class="invalid-feedback" *ngIf="email.errors.required">Email is required</div>
             </div>
           </div>
         </div>
@@ -223,11 +218,11 @@
           </div>
 
           <div>
-            <input formControlName="sujet" class="form-control"
-                   [ngClass]="{ 'is-invalid': submitted && f.sujet.errors }" [ngModel]="form.sujet"
+            <input #sujet="ngModel" class="form-control" name="sujet"
+                   [ngClass]="{ 'is-invalid': submitted && sujet.errors }" [(ngModel)]="form.sujet"
                    id="Rectangle_24_dr" type="text" class="Rectangle_26" required>
-            <div *ngIf="submitted && f.sujet.errors" class="invalid-feedback">
-              <div *ngIf="f.sujet.errors.required"> Sujet is required</div>
+            <div *ngIf="submitted && sujet.errors" class="invalid-feedback">
+              <div *ngIf="sujet.errors.required"> Sujet is required</div>
             </div>
           </div>
         </div>
@@ -238,13 +233,13 @@
           </div>
 
           <div>
-						<textarea formControlName="message" class="form-control" [ngModel]="form.message"
-                      [ngClass]="{ 'is-invalid': submitted && f.message.errors }" id="Rectangle_24_du"
+						<textarea #message="ngModel" class="form-control" [(ngModel)]="form.message" name="message"
+                      [ngClass]="{ 'is-invalid': submitted && message.errors }" id="Rectangle_24_du"
                       class="Rectangle_24_du" required>
 
 					</textarea>
-            <div *ngIf="submitted && f.message.errors" class="invalid-textarea">
-              <div *ngIf="f.message.errors.required"> Message is required</div>
+            <div *ngIf="submitted && message.errors" class="invalid-textarea">
+              <div *ngIf="message.errors.required"> Message is required</div>
             </div>
           </div>
         </div>

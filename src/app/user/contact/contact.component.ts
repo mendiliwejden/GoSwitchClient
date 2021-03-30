@@ -3,6 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ContactService} from '../../services/contact.service';
 import {Message} from '../../models/Message';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -11,31 +12,30 @@ import {Message} from '../../models/Message';
 })
 export class ContactComponent implements OnInit {
 
-  registerForm: FormGroup;
   submitted = false;
   form = new Message();
 
   constructor(private formBuilder: FormBuilder,
-              private contactService: ContactService) {
+              private contactService: ContactService,
+              private route: Router) {
   }
 
   ngOnInit() {
-    this.registerForm = this.formBuilder.group({
-      nom: ['', Validators.required],
-      NumTel: ['', [Validators.required, Validators.minLength(8)]],
-      email: ['', [Validators.required, Validators.email]],
-      sujet: ['', Validators.required],
-      message: ['', Validators.required]
-    });
   }
 
   // convenience getter for easy access to form fields
-  get f() {
-    return this.registerForm.controls;
-  }
+
 
   onSubmit() {
-
+    console.log(this.form);
+    this.form.message.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    this.contactService.sendMail(this.form).subscribe(
+      data => {
+        alert('Merci, votre message a bien été envoyé !');
+        this.submitted = true;
+        this.route.navigate(['']);
+      }
+    );
   }
 
 }
