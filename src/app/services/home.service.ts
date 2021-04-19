@@ -2,9 +2,10 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Home} from '../models/Home';
+import {environment} from '../../environments/environment';
 
+const HOME_API = environment.apiBaseUrl + '/home/';
 
-const HOME_API = 'http://localhost:8081/api/home/';
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'multipart/form-data; boundary=toMyFile'}),
 
@@ -31,8 +32,12 @@ export class HomeService {
     return this.http.get<Home[]>(HOME_API + 'allHome');
   }
 
-  updateHomePublished(id: number): Observable<any> {
-    return this.http.post(HOME_API + 'updateHomePublished', id);
+  getHomeListByRegion(region: string): Observable<Home[]> {
+    return this.http.get<Home[]>(HOME_API + 'HomeListByRegion/' + region);
+  }
+
+  updateHomePublished(id: number, state: boolean): Observable<any> {
+    return this.http.put(HOME_API + 'updateHomePublished/' + id + '/' + state, {});
   }
 
 
@@ -51,8 +56,4 @@ export class HomeService {
   getAllPublishedHome(): Observable<Home[]> {
     return this.http.get<Home[]>(HOME_API + 'AllHomePublished');
   }
-
-  getHomeListByRegion(region: string): Observable<Home[]> {
-  return this.http.get<Home[]>(HOME_API + 'HomeListByRegion/' + region);
-}
 }

@@ -157,7 +157,7 @@
                   <option>Monastir</option>
                   <option>Ariana</option>
                   <option>Ben Arous</option>
-                  <option>Médenine</option>
+                  <option>Siliana</option>
                   <option>Béja</option>
                   <option>El Kef</option>
                   <option>Djandouba</option>
@@ -269,12 +269,12 @@
 
             </div>
             <div>
-              <input class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
+              <input class="form-control" [ngClass]="{ 'is-invalid': submitted && f.errors }"
                      id="confirmerMotDePasse" type="password" class="Rectangle_26" required>
-              <div *ngIf="submitted && f.confirmPassword.errors">
-                <div class="invalid-confirm" *ngIf="f.confirmPassword.errors.required">Confirm Password is required
+              <div *ngIf="submitted && f.errors">
+                <div class="invalid-confirm" *ngIf="f.errors.required">Confirm Password is required
                 </div>
-                <div class="must-match" *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+                <div class="must-match" *ngIf="f.errors">Passwords must match</div>
               </div>
             </div>
           </div>
@@ -299,7 +299,7 @@
                 <option>Monastir</option>
                 <option>Ariana</option>
                 <option>Ben Arous</option>
-                <option>Médenine</option>
+                <option>Siliana</option>
                 <option>Béja</option>
                 <option>El Kef</option>
                 <option>Djandouba</option>

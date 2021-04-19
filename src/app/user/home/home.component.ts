@@ -14,17 +14,10 @@ export class HomeComponent implements OnInit {
 
   content: string;
 
-  constructor(private userService: UserService, private tokenStorage: TokenStorageService) { }
+  constructor(private userService: UserService, public tokenStorage: TokenStorageService) { }
 
   ngOnInit(): void {
-    this.userService.getPublicContent().subscribe(
-      data => {
-        this.content = data;
-      },
-      err => {
-        this.content = JSON.parse(err.error).message;
-      }
-    );
+
   }
 
 }

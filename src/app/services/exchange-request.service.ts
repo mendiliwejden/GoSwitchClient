@@ -2,8 +2,10 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {ExchangeRequest} from '../models/ExchangeRequest';
+import {environment} from '../../environments/environment';
 
-const REQ_API = 'http://localhost:8081/api/homeExchange/';
+const REQ_API = environment.apiBaseUrl + '/homeExchange/';
+
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'}),
 

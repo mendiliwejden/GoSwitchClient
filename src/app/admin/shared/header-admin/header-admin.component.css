@@ -11,3 +11,13 @@
           font-size: 3.5rem;
         }
       }
+      .marge-icone-admin{
+        margin-right: 8px;
+      }
+      .with-icon {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+      }

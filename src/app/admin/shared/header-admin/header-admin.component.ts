@@ -9,7 +9,7 @@ import {TokenStorageService} from '../../../services/token-storage.service';
 })
 export class HeaderAdminComponent implements OnInit {
 
-  constructor(private tokenStorage: TokenStorageService, ) { }
+  constructor(public tokenStorage: TokenStorageService, ) { }
 
   ngOnInit() {
   }

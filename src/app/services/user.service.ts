@@ -1,8 +1,9 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import {environment} from '../../environments/environment';
 
-const API_URL = 'http://localhost:8081/api/test/';
+const API_URL = environment.apiBaseUrl + '/users/';
 
 @Injectable({
   providedIn: 'root'
@@ -29,10 +30,17 @@ export class UserService {
   }
 
   getUserById(id: number): Observable<any> {
-    return this.http.get('http://localhost:8081/api/users/userById/' + id);
+    return this.http.get(API_URL + 'userById/' + id);
+  }
+  deleteUserById(id: number): Observable<any> {
+    return this.http.delete(API_URL + 'deleteById/' + id);
   }
 
   getAllUsers(): Observable<any> {
-    return this.http.get('http://localhost:8081/api/users/allUsers');
+    return this.http.get(API_URL + 'allUsers');
+  }
+
+  updateUserRoles(userId: number, admin: boolean): Observable<any> {
+    return this.http.get(API_URL + 'updateRoles/' + userId + '/' + admin);
   }
 }
