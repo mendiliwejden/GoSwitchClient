@@ -10,11 +10,12 @@ export class AuthGuard implements CanActivate {
   }
 
   canActivate(): boolean {
-    if (this.tokenStorageService.loggedIn()) {
+    if (this.tokenStorageService.loggedIn() && this.tokenStorageService.isTokenExpired()) {
       console.log('true');
       return true;
     } else {
       console.log('false');
+      alert('Vous devez vous connecter');
       this.router.navigate(['/login']);
       return false;
     }

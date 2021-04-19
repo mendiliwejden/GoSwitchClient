@@ -10,10 +10,11 @@ import {TokenStorageService} from '../../services/token-storage.service';
 })
 export class HeaderComponent implements OnInit {
 
+  roles: any[];
 
-  constructor(private tokenStorage: TokenStorageService) { }
+  constructor(public tokenStorage: TokenStorageService) { }
 
   ngOnInit() {
+    this.roles = this.tokenStorage.getAuthorities();
   }
-
 }

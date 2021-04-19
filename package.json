@@ -24,6 +24,8 @@
     "@ng-bootstrap/ng-bootstrap": "^5.3.1",
     "angular-responsive-carousel": "^2.0.2",
     "bootstrap": "^4.6.0",
+    "jwt-decode": "^3.1.2",
+    "ngx-bootstrap": "^6.2.0",
     "ngx-owl-carousel-o": "^5.0.0",
     "ngx-toastr": "^13.2.1",
     "rxjs": "~6.6.3",

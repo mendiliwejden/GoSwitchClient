@@ -1,0 +1,68 @@
+.icon{
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.maisonList {
+  margin-top: 100px;
+  background-color: rgba(236,203,255,1);
+  position: center;
+  margin-left: 50px;
+  margin-right: 500px;
+  width: 1800px;
+}
+.marge {
+  margin-right: 15px;
+  color: #7c0008;
+}
+.scorll-bar{
+  overflow:scroll
+}
+.with-icon {
+  display: flex;
+  align-items: center;
+}
+.title-value-color {
+  color: #a2d5c6;
+}
+.value-color {
+  color: #077b8a;
+  display:inline;
+  font-style: oblique;
+  text-transform: capitalize;
+}
+
+.mat-icon-size {
+  background-color: #726c7c;
+  border-color: #1a1e21;
+  border-radius: 3px;
+  border-width: 20px;
+  text-align: center;
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  font-size: 70px;
+  margin: 15px
+}
+
+.demande-button{
+  font-size: 20px;
+  text-align: right;
+  margin-right: 20px;
+}
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}

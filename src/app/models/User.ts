@@ -6,10 +6,11 @@ export class User {
   username: string;
   firstName: string;
   lastName: string;
-  numTel: string;
+  phoneNumber: string;
+  phoneNumber2: string;
   destination: string;
   facebook: string;
   region: string;
   password: string;
-  authorities: any[];
+  roles: any[];
 }

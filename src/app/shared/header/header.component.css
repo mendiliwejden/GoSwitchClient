@@ -2546,6 +2546,11 @@ a {
   margin-right: 10px;
 
 }
+.admin {
+  font-size: 65px;
+  color: white;
+  cursor: pointer;
+}
 
 .mat-menu-item:hover{
   color: #aa3c9f;

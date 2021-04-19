@@ -3,19 +3,187 @@
 <app-header-admin></app-header-admin>
 
 <div class="container-fluid">
-    <div class="row">
-      
-  
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Validate Home</h1>
-          <div class="btn-toolbar mb-2 mb-md-0">
+  <div class="row">
+
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Validate Home</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+        </div>
+      </div>
+
+      <table class=" table table-dark table-striped">
+        <thead>
+        <tr>
+          <th scope="col text-center">Id</th>
+          <th scope="col">User id</th>
+          <th scope="col">Titre</th>
+          <th scope="col">Region</th>
+          <th scope="col">Logement</th>
+          <th scope="col">Etages</th>
+          <th scope="col">Chambres</th>
+          <th scope="col">Lits</th>
+          <th scope="col">Bains</th>
+          <th scope="col">Balcons</th>
+          <th scope="col">Terrasses</th>
+          <th scope="col">Durée</th>
+          <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let home of homeList">
+          <th scope="row">{{home.id}}</th>
+          <td>{{home.userId}}</td>
+          <td>{{home.title}}</td>
+          <td>{{home.region}}</td>
+          <td>{{home.logement}}</td>
+          <td>{{home.etages}}</td>
+          <td>{{home.chambres}}</td>
+          <td>{{home.lits}}</td>
+          <td>{{home.bains}}</td>
+          <td>{{home.balcons}}</td>
+          <td>{{home.terrasses}}</td>
+          <td>De {{home.debut}} à {{home.end}}</td>
+          <td>
+            <mat-icon (click)="homeSelected=home; openModal(homeDetails)" class="icon">info</mat-icon>
+
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+
+    </main>
+  </div>
+</div>
+
+<ng-template #homeDetails>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Home details </h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div>
+
+      <div class="container">
+        <div class="row test-center text-lg-left">
+          <div class="col-lg-3 col-md-4 col-xs-6" *ngFor="let image of homeSelected.photos">
+            <a class="d-block mb-4 h-100" style="cursor: pointer">
+              <img class="img-fluid img-thumbnail" [src]="image" style="height: 171px; width: 250px">
+            </a>
           </div>
         </div>
-  
-        <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-  
-       
-      </main>
+      </div>
+
+      <div>
+        <div class="card card-outline-secondary my-4">
+          <div class="card-header" style="font-size: 50px">
+            Propriétés
+          </div>
+          <div class="card-body">
+
+            <div style="font-size: 25px">
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">  Titre de maison : </strong> <p
+                  class="value-color"> {{homeSelected.title}}</p></h3></span>
+              </div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">  Type de maison : </strong> <p
+                  class="value-color"> {{homeSelected.logement}} </p></h3>
+                    </span></div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">  Region de maison : </strong> <p
+                  class="value-color"> {{homeSelected.region}} </p></h3>
+                    </span></div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">  Nombre de bains : </strong> <p
+                  class="value-color"> {{homeSelected.bains}} </p></h3>
+                    </span></div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span> <h3>  <strong class="title-value-color">  Nombre de chambres : </strong> <p
+                  class="value-color"> {{homeSelected.chambres}} </p></h3>
+                    </span></div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">Nombre de etages : </strong> <p
+                  class="value-color">{{homeSelected.etages}}</p></h3>
+                    </span></div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">Nombre de lits : </strong> <p
+                  class="value-color">{{homeSelected.lits}}</p></h3>
+                    </span></div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">Nombre de balcons : </strong> <p
+                  class="value-color">{{homeSelected.balcons}}</p></h3>
+                    </span></div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">Nombre de Terrasses : </strong> <p
+                  class="value-color">{{homeSelected.terrasses}}</p></h3>
+                    </span></div>
+              <div class="with-icon">
+                <mat-icon class="marge">label_important</mat-icon>
+                <span><h3>  <strong class="title-value-color">Disponible de </strong> <p
+                  class="value-color">{{homeSelected.debut}}</p></h3>
+                    </span><span><h3>  <strong class="title-value-color">&nbsp; à </strong> <p
+                class="value-color">{{homeSelected.end}}</p></h3>
+                    </span></div>
+            </div>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <div class="card-header" style="font-size: 50px">
+              Caractéristiques
+            </div>
+            <p style="font-size: 25px">
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.wifi">wifi</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.tv">tv</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.microondes">room_service</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.refrigrrateur">kitchen</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.escalier">stairs</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.jacuzzi">hot_tub</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.magazin">store</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.piscine">pool</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.gazon">grass</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.animaux">pest_control_rodent</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.radio">radio</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.equipepourenfants">child_care</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.bicyclette">motorcycle</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.parking">local_parking</mat-icon>
+              <mat-icon class="mat-icon-size" *ngIf="homeSelected.fumeurs">smoking_rooms</mat-icon>
+
+            </p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small><br>
+            <mat-radio-group aria-label="Select an option">
+              <mat-radio-button color="primary" [value]="true"
+                                [checked]="homeSelected.published == true ? true : false"
+                                (change)="onItemChange($event.value)">Published
+              </mat-radio-button>
+              <mat-radio-button color="primary" [value]="false"
+                                [checked]="homeSelected.published == false ? true : false"
+                                (change)="onItemChange($event.value)">Not Published
+              </mat-radio-button>
+            </mat-radio-group>
+            <div class="demande-button">
+              <button [disabled]="!stateChanged" (click)="updatePublished()" class="btn btn-success demande-button">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</ng-template>

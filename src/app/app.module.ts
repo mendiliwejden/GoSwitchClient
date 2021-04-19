@@ -61,6 +61,11 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import {CarouselModule} from 'ngx-owl-carousel-o';
+import {ModalModule} from 'ngx-bootstrap/modal';
+import {MatRadioModule} from "@angular/material/radio";
+import { ConfirmationDialogComponent } from './shared/confirmation-dialog/confirmation-dialog.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -110,6 +115,7 @@ import {CarouselModule} from 'ngx-owl-carousel-o';
     ValidateEchangeComponent,
     ValidateHomeComponent,
     ProfileComponent,
+    ConfirmationDialogComponent,
 
   ],
   imports: [
@@ -127,7 +133,11 @@ import {CarouselModule} from 'ngx-owl-carousel-o';
     MatTooltipModule,
     [IvyCarouselModule],
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    ModalModule.forRoot(),
+    MatRadioModule,
+    MatCardModule,
+    MatCheckboxModule,
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
